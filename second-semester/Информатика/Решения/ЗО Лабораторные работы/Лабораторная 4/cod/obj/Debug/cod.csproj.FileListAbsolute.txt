@@ -1,0 +1,7 @@
+D:\university\second-semester\Информатика\Решения\ЗО Лабораторные работы\Лабораторная 4\cod\bin\Debug\cod.exe.config
+D:\university\second-semester\Информатика\Решения\ЗО Лабораторные работы\Лабораторная 4\cod\bin\Debug\cod.exe
+D:\university\second-semester\Информатика\Решения\ЗО Лабораторные работы\Лабораторная 4\cod\bin\Debug\cod.pdb
+D:\university\second-semester\Информатика\Решения\ЗО Лабораторные работы\Лабораторная 4\cod\obj\Debug\cod.csproj.AssemblyReference.cache
+D:\university\second-semester\Информатика\Решения\ЗО Лабораторные работы\Лабораторная 4\cod\obj\Debug\cod.csproj.CoreCompileInputs.cache
+D:\university\second-semester\Информатика\Решения\ЗО Лабораторные работы\Лабораторная 4\cod\obj\Debug\cod.exe
+D:\university\second-semester\Информатика\Решения\ЗО Лабораторные работы\Лабораторная 4\cod\obj\Debug\cod.pdb

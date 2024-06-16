@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
 
 namespace WindowsFormsApp1
 {
@@ -181,8 +182,10 @@ namespace WindowsFormsApp1
             dataGridView2.Columns.Clear();
             dataGridView3.Rows.Clear();
             dataGridView3.Columns.Clear();
+            dataGridView4.Rows.Clear();
+            dataGridView4.Columns.Clear();
             button3.Enabled = true;
-            label9.Text = "";
+            label15.Text = "";
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -212,6 +215,7 @@ namespace WindowsFormsApp1
                     dataGridView2.Rows[i].Cells[j].Value = ptr[i, j];
                 }
             }
+            this.MakePersonalTicket(ptr);
             q = 0;
             k = 0;
             if (ptr[n - 1, m - 1] < 0) k++;
@@ -259,8 +263,70 @@ namespace WindowsFormsApp1
                     dataGridView3.Rows[i].Cells[j].Value = ptr[i, j];
                 }
             }
+        }
 
-        
-    }
+        /// <summary>
+        /// 8. В матрице удалить первую и последнюю строки, а затем добавить строку
+        /// из максимальных элементов соответствующих столбцов.
+        /// </summary>
+        private void MakePersonalTicket(int[,] matrix)
+        {
+            matrix = this.TrimFirstAndLastRow(matrix);
+            matrix = this.AppendMaxRow(matrix);
+
+            dataGridView4.AutoResizeColumns();
+            dataGridView4.ColumnCount = matrix.GetLength(1);
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                dataGridView4.Rows.Add();
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    dataGridView4.Rows[i].Cells[j].Value = matrix[i, j];
+                }
+            }
+        }
+
+        /// <summary>
+        /// Удаляет первый и последний ряд в двумерном массиве
+        /// </summary>
+        private int[,] TrimFirstAndLastRow(int[,] matrix)
+        {
+            if (matrix.GetLength(0) < 2)
+            {
+                return new int[0,0];
+            }
+            int[,] result = new int[matrix.GetLength(0) - 2, matrix.GetLength(1)];
+
+            for (int i = 0; i < matrix.GetLength(0) - 2; i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    result[i, j] = matrix[i + 1, j];
+                }
+            }
+
+            return result;
+        }
+        /// <summary>
+        /// Добавляет ряд максимальных значений матрицы
+        /// </summary>
+        private int[,] AppendMaxRow(int[,] matrix)
+        {
+            int[,] result = new int[matrix.GetLength(0) + 1, matrix.GetLength(1)];
+
+            for (int column = 0; column < matrix.GetLength(1); column++)
+            {
+                int row = 0;
+                int maxValueInColumn = matrix[row, column];
+                for (; row < matrix.GetLength(0); row++)
+                {
+                    result[row, column] = matrix[row, column];
+                    maxValueInColumn = Math.Max(maxValueInColumn, matrix[row, column]);
+                }
+                result[row, column] = maxValueInColumn;
+            }
+
+            return result;
+        }
     }
 }

@@ -61,33 +61,34 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            button2.Enabled = false;
-            label8.Text = "";
-            if (numericUpDown5.Value < numericUpDown5.Value)
+            button1.Enabled = false;
+            label7.Text = "";
+            if (numericUpDown4.Value < numericUpDown5.Value)
             {
-                label8.Text = "Макс значение не м.б. меньше мин значения!"; 
+                label7.Text = "Макс значение не м.б. меньше мин значения!"; 
                 return; 
             }
-            int count, current = 0;
-                count = (Convert.ToInt32(numericUpDown3.Value) -
-                Convert.ToInt32(numericUpDown2.Value)) /
-                Convert.ToInt32(numericUpDown4.Value) + 1;
-                for (int n = Convert.ToInt32(numericUpDown2.Value); 
-                    n <= Convert.ToInt32(numericUpDown3.Value);
-                    n += Convert.ToInt32(numericUpDown4.Value))
+
+            int current = 0;
+            int count = (Convert.ToInt32(numericUpDown2.Value) - Convert.ToInt32(numericUpDown1.Value)) /
+                Convert.ToInt32(numericUpDown3.Value) + 1;
+
+                for (int n = Convert.ToInt32(numericUpDown1.Value); 
+                    n <= Convert.ToInt32(numericUpDown2.Value);
+                    n += Convert.ToInt32(numericUpDown3.Value))
                 {
                     int[] vptr = new int[n];
                     Random rand = new Random();
                     for (int j = 0; j < n; j++)
                     {                 
-                        vptr[j] = rand.Next(Convert.ToInt32(numericUpDown5.Value), Convert.ToInt32(numericUpDown5.Value));
+                        vptr[j] = rand.Next(Convert.ToInt32(numericUpDown5.Value), Convert.ToInt32(numericUpDown4.Value));
                     }
                     if (checkBox1.Checked)
                     {
                         dataGridView1.ColumnCount = n + 1;
                         dataGridView1.Rows.Add();
                         dataGridView1.Rows[i].Cells[0].Value = "Исходный массив";
-                    for (int j = 0; j < n; j++)
+                        for (int j = 0; j < n; j++)
                         {
                             dataGridView1.Rows[i].Cells[j + 1].Value = vptr[j];
                         }
@@ -111,9 +112,10 @@ namespace WindowsFormsApp1
             sr += n;
             if (n == 0)
             {
-                label8.Text = "В массиве одни нули"; return;
+                label7.Text = "В массиве одни нули"; return;
             }
             for (m = 0; m < n - 1; m++)
+            {
                 for (int j = m + 1; j < n; j++)
                 {
                     if (p[m] > 0 && p[j] > 0 && p[m] < p[j])
@@ -126,6 +128,7 @@ namespace WindowsFormsApp1
                     }
                     sr += 6;
                 }
+            }
             if (checkBox1.Checked)
             {
                 dataGridView1.AutoResizeColumns();
@@ -136,7 +139,7 @@ namespace WindowsFormsApp1
                 i++;
             }
 
-            if (Convert.ToInt32(numericUpDown2.Value) == Convert.ToInt32(numericUpDown3.Value))
+            if (Convert.ToInt32(numericUpDown1.Value) == Convert.ToInt32(numericUpDown2.Value))
             {
                 label8.Text = "Количество сравнений=" + Convert.ToString(sr) + " Количество обменов=" + Convert.ToString(obm);
             }
@@ -157,7 +160,7 @@ namespace WindowsFormsApp1
             dataGridView1.Rows.Clear();
             dataGridView1.Columns.Clear();
             i = 0;
-            button2.Enabled = true;
+            button1.Enabled = true;
         }
 
         private void label10_Click(object sender, EventArgs e)
@@ -188,13 +191,13 @@ namespace WindowsFormsApp1
             button3.Enabled = false;
             if (numericUpDown8.Value < numericUpDown9.Value)
             {
-                label9.Text = "Макс значение не м.б. меньше мин значения!";
+                label15.Text = "Макс значение не м.б. меньше мин значения!";
                 return;
             }
             n = Convert.ToInt32(numericUpDown6.Value);
             m = Convert.ToInt32(numericUpDown6.Value);
-            int[,] ptr;
-            ptr = new int[m, n];
+            int[,] ptr = new int[m, n];
+
             Random rand = new Random();
             dataGridView2.AutoResizeColumns();
             dataGridView2.ColumnCount = n;
@@ -229,15 +232,15 @@ namespace WindowsFormsApp1
             }
             if (k == n)
             {
-                label9.Text = "В матрице удалены все строки";
+                label15.Text = "В матрице удалены все строки";
                 return;
             }
             if (k == 0)
             {
-                label9.Text = "В матрице нет удаленных строк";
+                label15.Text = "В матрице нет удаленных строк";
                 return;
             }
-            label9.Text = "В матрице удалено " + k + " строк(и)";
+            label15.Text = "В матрице удалено " + k + " строк(и)";
             for (j = 0; j < m; j++)
             {
                 ptr[n - k, j] = 0;

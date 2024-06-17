@@ -1,0 +1,10 @@
+D:\university\second-semester\Информационные технологии\laba_2\PersonalTicket\bin\Debug\PersonalTicket.exe.config
+D:\university\second-semester\Информационные технологии\laba_2\PersonalTicket\bin\Debug\PersonalTicket.exe
+D:\university\second-semester\Информационные технологии\laba_2\PersonalTicket\bin\Debug\PersonalTicket.pdb
+D:\university\second-semester\Информационные технологии\laba_2\PersonalTicket\obj\Debug\PersonalTicket.csproj.AssemblyReference.cache
+D:\university\second-semester\Информационные технологии\laba_2\PersonalTicket\obj\Debug\PersonalTicket.Form1.resources
+D:\university\second-semester\Информационные технологии\laba_2\PersonalTicket\obj\Debug\PersonalTicket.Properties.Resources.resources
+D:\university\second-semester\Информационные технологии\laba_2\PersonalTicket\obj\Debug\PersonalTicket.csproj.GenerateResource.cache
+D:\university\second-semester\Информационные технологии\laba_2\PersonalTicket\obj\Debug\PersonalTicket.csproj.CoreCompileInputs.cache
+D:\university\second-semester\Информационные технологии\laba_2\PersonalTicket\obj\Debug\PersonalTicket.exe
+D:\university\second-semester\Информационные технологии\laba_2\PersonalTicket\obj\Debug\PersonalTicket.pdb

@@ -1,0 +1,7 @@
+D:\university\second-semester\Информационные технологии\laba_2\TestRegex\bin\Debug\TestRegex.exe.config
+D:\university\second-semester\Информационные технологии\laba_2\TestRegex\bin\Debug\TestRegex.exe
+D:\university\second-semester\Информационные технологии\laba_2\TestRegex\bin\Debug\TestRegex.pdb
+D:\university\second-semester\Информационные технологии\laba_2\TestRegex\obj\Debug\TestRegex.csproj.AssemblyReference.cache
+D:\university\second-semester\Информационные технологии\laba_2\TestRegex\obj\Debug\TestRegex.csproj.CoreCompileInputs.cache
+D:\university\second-semester\Информационные технологии\laba_2\TestRegex\obj\Debug\TestRegex.exe
+D:\university\second-semester\Информационные технологии\laba_2\TestRegex\obj\Debug\TestRegex.pdb

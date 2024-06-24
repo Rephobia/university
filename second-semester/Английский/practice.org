@@ -1,0 +1,112 @@
+Programming for Computers
+
+The word "program" has come into use to refer to the sequence of instructions which a computer carries out.
+Слово "программа" стало употребляться для обозначения последовательности инструкций, которые выполняет компьютер.
+
+A program for a computer is an exact sequence of instructions that it uses to solve a problem.
+Программа для компьютера представляет собой точную последовательность инструкций, которые он использует для решения проблемы.
+
+It usually consists of subroutines or subprograms which are portions of it.
+Обычно она состоит из подпрограмм или подпрограмм, которые являются ее частями.
+(в чем разница между subroutites и subprograms)
+
+A subroutine is a subcode that may be used many times during the computation of a program but written only once in the whole code.
+Подпрограмма - это подкод, который может использоваться многократно во время вычислений программы, но записывается только один раз во всем коде.
+
+As the computer proceeds down the main program, the control will occasionally jump to this subroutine and then, after doing the subroutine, will jump back to the main program where it left off.
+По мере того как компьютер выполняет основную программу, управление время от времени переходит к этой подпрограмме, а затем, после выполнения подпрограммы, возвращается к основной программе, где оно остановилось. 
+
+Several subroutines may be used in one program so it often becomes profitable to have a library of subroutines available to the programmer, stored at all times in some part of the computer memory.
+В одной программе может использоваться несколько подпрограмм, поэтому часто бывает целесообразно иметь библиотеку подпрограмм, доступную программисту, хранящуюся все время в какой-то части памяти компьютера.
+
+There would also be some catalogue kept outside the computer that the programmer can consult.
+Также должен быть внешний каталог, доступный программисту для консультаций.
+
+This catalogue will tell him where each subroutine is located and how to use it.
+В этом каталоге будет указано местоположение каждой подпрограммы и способ ее использования.
+
+Programming for the computers has several forms.
+Программирование для компьютеров имеет несколько форм.
+
+The basic forms include the creating translation programs that perform the processing logic.
+Основные формы включают создание программ перевода, выполняющих логику обработки.
+
+One form is the construction of compiling programs or compilers.
+Одна форма - создание компилирующих программ или компиляторов.
+
+The second form is the construction of programs called interpreters.
+Вторая форма - создание программ, называемых интерпретаторами.
+
+The third form is the development of common languages for automatic programming of problems, so that any problem, when expressed in such a language, can be given to any computer.
+Третья форма - разработка общих языков для автоматического программирования задач, так чтобы любая задача, выраженная на таком языке, могла быть передана любому компьютеру.
+
+Аннотация
+1) В тексте дается определение программы, ее структура и функции.
+The text gives the definition of a program, it is structure and functions.
+2) Детально говорится о процессах и этапах выполнения программы.
+It is spoken in detail about processes and steps of executing a program.
+3) Особое внимание  уделяется видам программирования.
+Special attention is given to forms  of programming.
+
+Computers
+Today's computers carry out instructions given to them at very high speeds – rated in millions of instructions per second on large machines.
+Современные компьютеры выполняют инструкции, поданные им, с очень высокой скоростью - измеряемой в миллионах инструкций в секунду на больших машинах.
+
+The main purpose of a computer is to take information, process it and then produce some sort of output.
+Основная цель компьютера заключается в том, чтобы принимать информацию, обрабатывать её, а затем производить какой-то вид вывода.
+
+The most common form of input into computer today is the operation of entering information via a keyboard that is usually connected to a visual display screen.
+Самая распространенная форма ввода информации в компьютер сегодня - это ввод информации через клавиатуру, которая обычно подключена к визуальному дисплею.
+
+The person sitting at the keyboard, a student on a computer-based training course, for example, types answers to questions displayed on the screen.
+Человек, сидящий за клавиатурой, например, студент на компьютерном курсе, вводит ответы на вопросы, отображаемые на экране.
+
+The input is the answer which is processed very rapidly by the computer to give an almost immediate response on the screen – the output.
+Ввод представляет собой ответ, который быстро обрабатывается компьютером для того, чтобы почти мгновенно получить ответ на экране - вывод.
+
+The Central Processing Unit (CPU) carries out the process stage of computer operations.
+Центральный процессор (ЦП) выполняет этап обработки операций компьютера.
+
+The CPU can be divided into three main components: the control unit, the arithmetic and logic unit (ALU) and the memory.
+ЦП можно разделить на три основных компонента: управляющее устройство, арифметико-логическое устройство (АЛУ) и память.
+
+The CPU receives information from an input device.
+ЦП получает информацию от устройства ввода.
+ 
+This information can be instructions to the computer program or it can be data – the information upon which the instructions will operate.
+Эта информация может быть инструкциями для программы компьютера или данными - информацией, над которой будут выполняться инструкции.
+
+Both types of information need to be stored in the computer memory.
+Оба типа информации должны храниться в памяти компьютера.
+
+The computer memory consists of a large number of locations each of which can hold a piece of information: a character (А, В, с, d, etc), a number (0,1,2, etc) or part of a coded instruction to the computer.
+Память компьютера состоит из большого количества ячеек, каждая из которых может содержать кусок информации: символ (A, B, C, D и т. д.), число (0, 1, 2 и т. д.) или часть закодированной инструкции для компьютера.
+
+There may be a large number of memory locations; large computers have several millions, while microcomputers may have a million or more.
+Количество ячеек памяти может быть очень большим; у больших компьютеров их может быть несколько миллионов, в то время как у микрокомпьютеров их может быть миллион или более.
+
+Each memory location has a unique address so that the information can be accessed directly.
+У каждой ячейки памяти есть уникальный адрес, чтобы информацию можно было получить напрямую.
+
+Data can be stored in or read from memory very fast.
+Данные могут быть записаны в память или считаны из неё очень быстро.
+
+The memory on modern computers is often termed Random Access Memory (RAM).
+Память на современных компьютерах часто называется оперативной памятью (RAM).
+
+RAM retains all the coded information set up in it while power is switched on, but when the computer is switched off the information is lost and the memory needs to be loaded again when the computer is switched back on.
+RAM сохраняет всю закодированную информацию в ней во время работы компьютера, но когда питание отключается, информация теряется и память должна быть загружена заново при последующем включении компьютера.
+
+Реферат
+1) _Текст рассматривает_ главные компоненты компьютерной системы.
+The text deals with the basic components of a computer system.
+2) Основаная задача компьютера - принимать информацию, обрабатывать ее и выдавать результат.
+The main purpose of a computer is to take information, process it and then produce some output.
+3) Самыми распространенными устройствами ввода вывода являются клавиатура и экран.
+The most common input/output devices are a keyboard and a screen.
+4) _В тексте подробно описывается_ структура и функции цпу.
+The text describes in detail the structures and the functions of cpu.
+5) _Особое внимание уделяется_ устройству и принципам работы оперативной памяти
+Special attention is paid to the organization and working principes of the main memory
+6) _Текст представяет интерес для_ студентов изучающих информатику
+The text is of interest to computer science students

@@ -1,0 +1,74 @@
+1] The earliest computers were huge electronic devices filling a complete
+room. They were frequently referred to as "giant brains". Modern computers through
+improved technology occupy only a small fraction of the space required for earlier
+machines. The complete electronic circuitry that is required to perform all the
+functions of a computer can be contained on a small electronic chip, called
+microprocessor, no larger than a human fingernail.
+[2] An electronic computer forms a large complicated device. Generally it
+consists of several thousands or more circuits connected together. The failure of any
+one part puts the machine out of operation. Computers are used successfully in
+research and industrial work due to their exactness and speed in calculation. All the
+electronic computers, both digital and analog machines, consist of five main parts.
+The first part is an arithmetic unit which can perform the arithmetic operations at a
+very high speed.
+[3] The second part is the memory which holds the numbers forming the initial
+data. The memory unit is divided into a number of registers each of which holds one
+number. These numbers are of standard length, usually from 9 to 12 decimals. The
+third part of a computer is the control unit that takes the coded instructions in the
+correct sequence. Inside the computer the numbers and instructions are stored as
+electronic pulses. A problem must be fed into the machine, however, in a form in
+which it can readily be prepared by human operators.
+[4] The fourth part of a computer is the unit which does the feeding. This unit
+is called the input. Usually the input consists of a reader, which converts information
+that is stored either on hard, or on laser discs into a pulse form. Both the data and the
+coded numerical instructions are fed into the machine by means of this unit. The fifth
+part of a computer is an output unit by means of which final answers are produced.
+The most common forms of output in the past were punched cards, films, floppy
+discs and printed material. Nowadays these are compact discs and flash drives.
+
+1] Самые ранние компьютеры представляли собой огромные электронные устройства, заполнявшие полную
+комната. Их часто называли «гигантскими мозгами». Современные компьютеры через
+улучшенные технологии занимают лишь небольшую часть места, необходимого для более ранних
+машины. Полная электронная схема, необходимая для выполнения всех
+Функции компьютера могут содержаться в небольшом электронном чипе, называемом
+микропроцессор размером не больше человеческого ногтя.
+[2] Электронный компьютер представляет собой большое сложное устройство. Обычно это
+состоит из нескольких тысяч и более цепей, соединенных между собой. Неудача какого-либо
+одна часть выводит машину из строя. Компьютеры успешно используются в
+научно-исследовательские и промышленные работы благодаря точности и быстроте расчетов. Все
+электронные вычислительные машины, как цифровые, так и аналоговые, состоят из пяти основных частей.
+Первая часть представляет собой арифметическое устройство, которое может выполнять арифметические операции за один раз.
+очень высокая скорость.
+[3] Вторая часть — это память, в которой хранятся числа, образующие начальные значения.
+данные. Блок памяти разделен на несколько регистров, каждый из которых содержит один
+число. Эти числа имеют стандартную длину, обычно от 9 до 12 десятичных знаков.
+Третья часть компьютера — это блок управления, который принимает закодированные инструкции в
+правильная последовательность. Внутри компьютера числа и инструкции хранятся в виде
+электронные импульсы. Проблема должна быть введена в машину, однако, в форме,
+который может быть легко подготовлен людьми-операторами.
+[4] Четвертая часть компьютера — это блок, который осуществляет кормление. Этот блок
+называется входом. Обычно вход состоит из считывателя, преобразующего информацию
+который сохраняется либо на жестких, либо на лазерных дисках в импульсной форме. И данные, и
+закодированные числовые инструкции подаются в машину с помощью этого устройства. Пятый
+Часть компьютера представляет собой устройство вывода, с помощью которого выдаются окончательные ответы.
+Наиболее распространенными формами вывода в прошлом были перфокарты, фильмы, дискеты.
+диски и печатные материалы. Сейчас это компакт-диски и флешки.
+
+Аннотация:
+1) В тексте описывается структура компьютера
+The text describes structure of computer
+2) Детально говорится о функции компонентов компьютера
+It is spoken in detail about parts of computer
+
+
+Реферат
+1) _В тексте дается подробный_ анализ компонентов компьютера
+The text gives a detailed analysis of computer parts
+2) _Кратко описывается_ работа aрифметико-логическое устройство
+A brief account is given work of an arithmetic logic unit
+3) Описывает работа оперативной памяти и цпу
+it Describes of working principles of the main memory and cpu
+4) Особое внимание уделяется блокам ввода вывода
+Special attention is paid to input/output devices
+5) _Текст представяет интерес для_ студентов изучающих информатику
+The text is of interest to computer science students

@@ -1,0 +1,53 @@
+[1] The term "computer" literary means any automatic device capable of
+performing calculations without human intervention. In actual practice a computer is
+used as a part of a system involving other machines, programs, human beings, and
+procedures. The operations performed by a computer are called data processing, or
+computing. An electronic computer is a machine that can perform mathematical work
+and can store and select information that has been fed into it. Such a machine can do
+a great amount of complicated work in a phenomenally short time.
+[2] A computer, for example, can add or subtract hundreds of thousands times
+a second, multiply thousands times a second, divide hundreds times a second.
+Specialists have estimated that in making arithmetical calculations man makes one
+mistake per 200 digits. Electronic computers make one mistake in milliards of digits.
+Electronic circuits work thousands times more rapidly than nerve cells in the human
+brain. A problem that might take the human brain two years to solve can be solved by
+a computer in one minute.
+[3] The heart of the electronic computer lies in its large-scale integrated circuits
+or chips. A computer must be given certain instructions to work properly. This
+process is called "programming". Computers can be designed for specialized
+purposes, such as directing manufacture of tools and parts, guiding airplane flights,
+solving mathematical problems, keeping bank accounts, even playing chess.
+[4] Many types of scientific work have been greatly speeded up by the use of
+computers. If there were no computers to make the necessary mathematical
+calculations, it would have taken years to complete some scientific research work. A
+good example of this is the study of fusion process which progresses much more
+rapidly than expected thanks to specially designed computers. Computers have made
+weather forecast more accurate by quick analysis of complex data of temperature,
+humidity, air pressure, winds and rainfall.
+
+[1] Термин «компьютер» в буквальном смысле означает любое автоматическое устройство, способное
+выполнение расчетов без участия человека. На практике компьютер
+используется как часть системы, включающей другие машины, программы, людей и
+процедуры. Операции, выполняемые компьютером, называются обработкой данных, или
+вычисления. Электронный компьютер — это машина, способная выполнять математическую работу.
+и может хранить и выбирать введенную в него информацию. Такая машина может сделать
+огромный объем сложной работы в феноменально короткие сроки.
+[2] Компьютер, например, может складывать или вычитать сотни тысяч раз.
+в секунду, умножайте тысячи раз в секунду, делите сотни раз в секунду.
+Специалисты подсчитали, что при арифметических вычислениях человек затрачивает один
+ошибка на 200 цифр. Электронные компьютеры допускают одну ошибку в миллиардах цифр.
+Электронные схемы работают в тысячи раз быстрее, чем нервные клетки человека.
+мозг. Проблема, на решение которой человеческому мозгу может потребоваться два года, может быть решена с помощью
+компьютер за одну минуту.
+[3] Сердцем электронного компьютера являются его крупномасштабные интегральные схемы.
+или чипсы. Для правильной работы компьютеру необходимо дать определенные инструкции. Этот
+процесс называется «программированием». Компьютеры могут быть предназначены для специализированных
+целей, таких как руководство производством инструментов и деталей, управление полетами самолетов,
+решать математические задачи, вести банковские счета и даже играть в шахматы.
+[4] Многие виды научной работы были значительно ускорены за счет использования
+компьютеры. Если бы не было компьютеров, способных выполнить необходимые математические
+расчетов, потребовались бы годы, чтобы завершить некоторые научные исследования. А
+Хорошим примером этого является изучение процесса термоядерного синтеза, который прогрессирует гораздо быстрее.
+быстрее, чем ожидалось, благодаря специально разработанным компьютерам. Компьютеры сделали
+более точный прогноз погоды за счет быстрого анализа комплексных данных о температуре,
+влажность, давление воздуха, ветер и осадки.

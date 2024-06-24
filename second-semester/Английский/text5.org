@@ -1,0 +1,54 @@
+1] A machine language is the natural instruction set of a computer which bears
+little resemblance to the algebraic form in which mathematical expressions are
+normally written. This language makes the operation of the computer possible. It is
+known as the binary number system and was originally used to represent and handle
+numbers only. Nowadays it is used to handle letters and symbols as well. Binary
+system uses only two symbols, 1 and 0, rather than the ten decimal numbers (0-9),
+and the twenty-six letters of the alphabet we normally use.
+[2] The decimal numbers are compared with the corresponding binary symbols.
+The symbol 1 in the binary system can be used to represent one, two, four, eight, or
+sixteen depending on its position or place in a special chart. The binary system is not
+so practical for ordinary numerical problems as the decimal system because more
+digits are required to express numbers. But this system suits modern computers
+because some of them can store millions decimal digits and operate with a lightning
+speed.
+[3] The basic unit of information with which digital computers operate is the
+bit. For many purposes, however it is better not to be specific about how the
+information is coded into bits. A byte is between 6 and 10 bits and corresponds to a
+storage unit necessary to contain the binary code. The store also contains a numerical
+quantities and data which are to be processed. It also has a program or list of
+instructions or commands which are to be performed.
+[4] It is the machine language that greatly helps the arithmetic unit normally
+perform the operation of addition, subtraction, multiplication and division and certain
+other special operations. The input and output devices are to supply information and
+to obtain it from the computer. These devices play a significant part in making the
+capacity of a computer effective. In converting information from one form to another
+these units employ the machine language.
+
+
+1] Машинный язык — это естественный набор команд компьютера, который несет
+мало похоже на алгебраическую форму, в которой выражаются математические выражения.
+нормально написано. Этот язык делает возможным работу компьютера. Это
+известна как двоичная система счисления и первоначально использовалась для представления и обработки
+только числа. В настоящее время он также используется для обработки букв и символов. Двоичный
+система использует только два символа, 1 и 0, а не десять десятичных чисел (0-9),
+и двадцать шесть букв алфавита, которым мы обычно пользуемся.
+[2] Десятичные числа сравниваются с соответствующими двоичными символами.
+Символ 1 в двоичной системе может использоваться для обозначения одного, двух, четырех, восьми или
+шестнадцать в зависимости от его положения или места в специальной карте. Двоичная система не
+так практична для обычных числовых задач, как десятичная система, потому что больше
+цифры необходимы для выражения чисел. Но эта система подходит современным компьютерам
+потому что некоторые из них могут хранить миллионы десятичных цифр и работать с молнией.
+скорость.
+[3] Основной единицей информации, с которой оперируют цифровые компьютеры, является
+кусочек. Однако во многих случаях лучше не уточнять, каким образом
+информация кодируется в битах. Байт имеет длину от 6 до 10 бит и соответствует
+единица хранения, необходимая для хранения двоичного кода. В магазине также есть числовой
+количества и данные, подлежащие обработке. Там также есть программа или список
+инструкции или команды, которые необходимо выполнить.
+[4] Именно машинный язык очень помогает арифметическому устройству нормально работать.
+выполнять операции сложения, вычитания, умножения и деления и некоторые
+другие специальные операции. Устройства ввода и вывода предназначены для подачи информации и
+чтобы получить его с компьютера. Эти устройства играют важную роль в создании
+мощность компьютера эффективная. При преобразовании информации из одной формы в другую
+эти единицы используют машинный язык.

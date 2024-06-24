@@ -1,0 +1,55 @@
+[1] Computers can be classified according to some aspects. First of all, they
+may generally be divided into special-purpose machines and general-purpose
+machines. Special-purpose computers are able to perform only a certain number of
+functions. They are usually highly efficient and faster than general-purpose
+computers but more restricted in their application. The general-purpose computer is
+capable of carrying out a wide variety of instructions. Programmers use their
+expertise and ingenuity to employ the instructions in any way that they choose.
+[2] The second way of classifying computers is the following. There are two
+classes of electronic computers: analog, which are faster but less accurate, and digital,
+which are slower but more exact. In analog computers numbers are represented by
+physical quantities. These numbers are the measures of those quantities. Analog
+machines are specialized for solving particular problems, such as solution of
+differential equations. On the other hand, digital computers work directly with
+numbers in digital form. They count numbers ("digit" means a symbol for a number).
+They can perform the operations of arithmetics: addition, subtraction, multiplication
+and division.
+[3] Analog computers are widely used for the investigation of mechanical
+processes in the system of automatic regulation. They are designed to accept physical
+forces such as electrical voltage, weights, pressures, speeds of rotation, or
+temperature, and record them along a scale. Digital machines have a wider
+application. They can be used in any process connected with counting or what is
+known as "logical analysis", such as sorting out, sifting, and comparing information.
+The instructions - translated into mathematical terms - must be fed into the machine.
+[4] A third way of classifying computers is by capacity. Medium and large-
+scale computers are usually called mainframes. Next in size are business
+minicomputers. Smallest of all are the microcomputers, often called personal
+computers.
+
+[1] Компьютеры можно классифицировать по некоторым аспектам. Прежде всего, они
+в целом можно разделить на машины специального назначения и машины общего назначения.
+машины. Компьютеры специального назначения способны выполнять лишь определенное количество операций.
+функции. Они обычно очень эффективны и быстрее, чем устройства общего назначения.
+компьютеры, но более ограничены в своем применении. Компьютер общего назначения – это
+способный выполнять самые разнообразные инструкции. Программисты используют свои
+опыт и изобретательность, чтобы использовать инструкции любым способом по своему выбору.
+[2] Второй способ классификации компьютеров заключается в следующем. Есть два
+классы электронных компьютеров: аналоговые, которые быстрее, но менее точны, и цифровые,
+которые медленнее, но точнее. В аналоговых компьютерах числа представлены
+физические величины. Эти числа являются мерами этих величин. Аналоговый
+машины специализированы для решения конкретных задач, таких как решение
+дифференциальные уравнения. С другой стороны, цифровые компьютеры работают напрямую с
+числа в цифровой форме. Они считают числа («цифра» означает символ числа).
+Они могут выполнять арифметические действия: сложение, вычитание, умножение.
+и разделение.
+[3] Аналоговые компьютеры широко используются для исследования механических
+процессы в системе автоматического регулирования. Они предназначены для приема физических
+силы, такие как электрическое напряжение, вес, давление, скорость вращения или
+температуру и запишите их по шкале. Цифровые машины имеют более широкую
+приложение. Их можно использовать в любом процессе, связанном со счетом или чем-то еще.
+известный как «логический анализ», такой как сортировка, просеивание и сравнение информации.
+Инструкции, переведенные в математические термины, должны быть введены в машину.
+[4] Третий способ классификации компьютеров — по мощности. Средние и крупные-
+масштабные компьютеры обычно называют мейнфреймами. Следующими по размеру являются бизнес
+миникомпьютеры. Самыми маленькими из всех являются микрокомпьютеры, часто называемые персональными.
+компьютеры.

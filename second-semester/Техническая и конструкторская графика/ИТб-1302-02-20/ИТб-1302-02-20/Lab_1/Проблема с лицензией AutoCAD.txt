@@ -1,0 +1,31 @@
+Если у кого-то не запускается AutoCAD или появляются проблемы с лицензией, можно попробовать сделать следующее:
+
+1. Открыть файл host (предварительно лучше сделать ео резервую копию), который расположен в директории C:\Windows\System32\drivers\etc\hosts
+
+2. Скопировать и вставить в конец файла эти строки:
+
+127.0.0.1 genuine-software2.autodesk.com
+127.0.0.1 ase-cdn-stg.autodesk.com
+127.0.0.1 ase.autodesk.com
+127.0.0.1 access.clic.autodesk.com
+127.0.0.1 clm.clic.autodesk.com
+127.0.0.1 accounts.autodesk.com
+127.0.0.1 ipm-aem.autodesk.com
+127.0.0.1 cdn.accounts.autodesk.com
+127.0.0.1 api.autodesk.com
+127.0.0.1 cur.autodesk.com
+127.0.0.1 registeronce.autodesk.com
+127.0.0.1 developer.api.autodesk.com
+127.0.0.1 sso.accounts.autodesk.com
+127.0.0.1 sso.connect.pingidentity.com
+127.0.0.1 autologon.microsoftazuread-sso.com
+127.0.0.1 autodesk-prod.okta.com
+127.0.0.1 auth.autodesk.com
+127.0.0.1 native.auth.autodesk.com
+127.0.0.1 profile.autodesk.com
+127.0.0.1 api.userprofile.autodesk.com
+127.0.0.1 cdn.web-platform.io
+127.0.0.1 authn.autodesk.com
+
+3. Сохранить и закрыть файл host.
+

@@ -1,0 +1,4 @@
+\babel@toc {russian}{}\relax 
+\contentsline {section}{\numberline {A}Название}{1}{}%
+\contentsline {subsection}{\numberline {A.1}Заголовок 1}{1}{}%
+\contentsline {subsection}{\numberline {A.2}Заголовок 2}{1}{}%

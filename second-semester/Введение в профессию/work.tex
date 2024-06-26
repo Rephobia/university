@@ -1,0 +1,55 @@
+\documentclass[a4paper,12pt,onecolumn]{article}
+\usepackage{amsmath}
+\usepackage[T2A]{fontenc} 
+\usepackage{cmap} 
+\usepackage[russian]{babel} 
+\usepackage{textcomp} 
+\usepackage{indentfirst} 
+\usepackage{amssymb}
+\usepackage{amsmath} 
+\usepackage{graphicx} 
+\usepackage{geometry} 
+\geometry{a4paper, total={170mm,257mm}, left=20mm, top=10mm, bottom=20mm, right=20mm}
+\begin{document}
+\title{Заголовок}
+\author{Ердяков Р.А.}
+\date{2024.06.26}
+\maketitle
+
+$$ \delta_{ij} =
+\begin{cases}
+1, & i=j,\\
+0, & i\ne j.
+\end{cases} $$
+\newline
+Текст % А
+будет не % комментарий
+прерывен! % пропадет!
+% Рисование
+\newline
+\rule[10pt]{25pt}{1pt}
+\newline
+\rule[-5pt]{10pt}{10pt}
+\newline
+\rule{6pt}{6pt}
+\newline
+\begin{itshape}
+Для верстки большого объема текста лучше пользовать окружениями
+\end{itshape}
+\newline
+\appendix
+\section{Название}\label{section_name}
+Текст приложения\dots
+\subsection{Заголовок 1}\label{section_1}
+Продолжение\dots
+\subsection{Заголовок 2}\label{section_2}
+\tableofcontents
+
+Номер станицы с меткой название - \pageref{section_name}
+
+\setcounter{footnote}{0}
+\addtocounter{footnote}{2}
+Текущее значение счетчика footnote = \thefootnote
+
+\footnote{Текст в примечении}{Текст который будет со сноской}
+\end{document}

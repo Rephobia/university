@@ -1,42 +1,56 @@
-\documentclass[a4paper,12pt,onecolumn]{article}
-\usepackage{amsmath}
-\usepackage[T2A]{fontenc} 
-\usepackage{cmap} 
-\usepackage[russian]{babel} 
-\usepackage{textcomp} 
-\usepackage{indentfirst} 
+% \documentclass[a4paper,14pt]{article}
+% \usepackage{amsmath}
+% \usepackage[T2A]{fontenc} 
+% \usepackage{cmap}
+% \usepackage{multirow}
+% \usepackage{array}
+% \usepackage[russian]{babel} 
+% \usepackage{textcomp} 
+% \usepackage{indentfirst} 
+% \usepackage{amssymb}
+% \usepackage{amsmath} 
+% \usepackage{graphicx} 
+% \usepackage{geometry} 
+\documentclass[a4paper, 10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{array}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{textcomp}
+\usepackage{indentfirst}
 \usepackage{amssymb}
-\usepackage{amsmath} 
-\usepackage{graphicx} 
+\usepackage{amsmath}
+\usepackage{graphics}
 \usepackage{geometry} 
-\geometry{a4paper, total={170mm,257mm}, left=20mm, top=10mm, bottom=20mm, right=20mm}
+\geometry{a4paper, total={170mm,257mm}, left=20mm, top=10mm, bottom=20mm, right=5mm}
+\pagestyle{empty}
 \begin{document}
 \title{Заголовок}
 \author{Ердяков Р.А.}
 \date{2024.06.26}
 \maketitle
-
 $$ \delta_{ij} =
 \begin{cases}
-1, & i=j,\\
-0, & i\ne j.
+  1, & i=j,\\
+  0, & i\ne j.
 \end{cases} $$
-\newline
+\\
 Текст % А
 будет не % комментарий
 прерывен! % пропадет!
 % Рисование
-\newline
+\\
 \rule[10pt]{25pt}{1pt}
-\newline
+\\
 \rule[-5pt]{10pt}{10pt}
-\newline
+\\
 \rule{6pt}{6pt}
-\newline
+\\
 \begin{itshape}
-Для верстки большого объема текста лучше пользовать окружениями
+  Для верстки большого объема текста лучше пользовать окружениями
 \end{itshape}
-\newline
+\\
 \appendix
 \section{Название}\label{section_name}
 Текст приложения\dots
@@ -52,4 +66,274 @@ $$ \delta_{ij} =
 Текущее значение счетчика footnote = \thefootnote
 
 \footnote{Текст в примечении}{Текст который будет со сноской}
+
+\newpage
+
+\vspace{10cm}
+\begin{center}
+  {\large
+    МИНИСТЕРСТВО НАУКИ И ВЫСШЕГО ОБРАЗОВАНИЯ\\ РОССИЙСКОЙ ФЕДЕРАЦИИ \\
+    \vspace{10px}
+    ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ \\
+    «ВЯТСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ»
+    \\
+    \vspace{10px}
+    Институт математики и информационных систем\\
+    \vspace{10px}
+    Факультет автоматики и вычислительной техники\\
+    \vspace{10px}
+    Кафедра систем автоматизации управления
+  }
+\end{center}
+\vspace{6\baselineskip}
+\begin{flushright}
+  
+  Дата сдачи на проверку:\\
+  \vspace{10px}
+  «\rule[0px]{10px}{0.5px}»\rule[0px]{65px}{0.5px} 2024г.\\
+  \vspace{5px}
+  Проверено:~~~~~~~~~~~~~~~~~~~\\
+  \vspace{10px}
+  «\rule[0px]{10px}{0.5px}»\rule[0px]{65px}{0.5px} 2024г.
+
+\end{flushright}
+\vspace{2\baselineskip}
+\begin{center}
+  {\large
+    \textbf {НАЗВАНИЕ РАБОТЫ}\\
+    \vspace{10px}
+    Отчёт по лабораторной работе №2 \\ по дисциплине\\
+    \vspace{10px}
+    «Введение в процессию»\\
+    \vspace{10px}
+    Вариант 4
+  }
+\end{center}
+\vspace{4\baselineskip}
+\begin{flushleft}
+  {\large
+    Разработал студент гр. ИТб-1302-02-20 \hfill \rule[0px]{60px}{0.5px}/Ердяков Р.A.\hspace{5px}/
+    \vspace{10px}
+
+    \hspace*{0.73\textwidth}({\smallПодпись})\\
+    \vspace{10px}
+
+    Руководитель ст. преподаватель \hfill \rule[0px]{60px}{0.5px}/Родионов К.В./
+    \vspace{10px}
+
+    \hspace*{0.73\textwidth}({\smallПодпись})\\
+    \vspace{10px}
+
+    Работа защищена с оценкой \hfill «\rule[0px]{55px}{0.5px}» «\rule[0px]{25px}{0.5px}»\rule[0px]{55px}{0.5px} 2024г.
+  }
+\end{flushleft}
+\vspace{10\baselineskip}
+\begin{center}
+  {\large Киров 2024}
+\end{center}
+
+\newpage
+
+	\begin{table}[h!]
+		\it
+		\begin{flushleft}
+			\begin{tabular}{|m{2mm}|m{3mm}|m{5cm}|m{6.5cm}|m{4mm}|m{4mm}|m{2cm}|}
+				\hline
+				\centering \scriptsize  \textbf{\rotatebox[origin=c]{90}{ № строки }} & \centering \scriptsize \textbf{\rotatebox[origin=c]{90}{ Формат }} & \centering \textbf {\multirow{2}{*}{Обозначение}} & \centering \textbf {\multirow{2}{*}{Наименование}} & \centering \scriptsize\textbf{\rotatebox[origin=c]{90}{Кол-во}} \textbf{\rotatebox[origin=c]{90}{листов}} & \textbf{\rotatebox[origin=c]{90}{№ экз}} &  \textbf {\multirow{2}{*}{Примеч}} \\
+				\hline
+				1 &    &    &\underline{Документация общая}& & & \\
+				\hline
+				2 &    &   &Вновь разработанная& & & \\
+				\hline
+				3 &    &   &  &  &  & \\
+				\hline
+				4 & А4 &ТПЖА.712002.051 ПЗ&Пояснительная записка&32&  & \\
+				\hline
+				5 &    &   &  &  &  & \\
+				\hline
+				6 &    &   &  &  &  & \\
+				\hline
+				7 &    &   &\underline{Документация по деталям}&  &  & \\
+				\hline
+				8 &    &   &Вновь разработанная&  &  & \\
+				\hline
+				9 &    &   &  &  &  & \\
+				\hline
+				10 &А2 &ТПЖА.712002.051-01&Крышка&1&  & \\
+				\hline
+				11 &А2&ТПЖА.712002.051-02&Крышка (отливка)&1&  & \\
+				\hline
+				12 &   &   &  &  &  & \\
+				\hline
+				13 &   &   &  &  &  & \\
+				\hline
+				14 &   &   &\underline{Документация}&  &  & \\
+				\hline
+				15 &   &   &\underline{технологическая}&  &  & \\
+				\hline
+				16 &   &   &Вновь разработанная&  &  & \\
+				\hline
+				17 &   &   &  &  &  & \\
+				\hline
+				18 &А4 &ТПЖА.02100.05101*&Комплект документов на&  &  & \\
+				\hline
+				19 &   &   &единичный технологичес-&  &  & \\
+				\hline
+				20 &   &   &кий процесс обработки&12&  & \\
+				\hline
+				21 &А1&ТПЖА.62141.05101*&Карта наладки на&  &  & \\
+				\hline
+				22 &   &   &операцию 115&1&  & \\
+				\hline
+				23 &   &   &  &  &  & \\
+				\hline
+				24 &   &   &  &  &  & \\
+				\hline
+				25 &   &   &  &  &  & \\
+				\hline
+				26 &   &   &  &  &  & \\
+				\hline
+				27 &   &   &  &  &  & \\
+				\hline
+				28 &   &   &  &  &  & \\
+				\hline
+				29 &   &   &  &  &  & \\
+				\hline
+				30 &   &   &  &  &  & \\
+				\hline
+				31 &   &   &  &  &  & \\
+				\hline
+				32 &   &   &  &  &  & \\
+				\hline
+				33 &   &   &  &  &  & \\
+				\hline
+				34 &   &   &  &  &  & \\
+				\hline
+				35 &   &   &  &  &  & \\
+				\hline
+				36 &   &   &  &  &  & \\
+				\hline
+				37 &   &   &  &  &  & \\
+				\hline
+				38 &   &   &  &  &  & \\
+				\hline
+				39 &   &   &  &  &  & \\
+				\hline
+				40 &   &   &  &  &  & \\
+				\hline
+				41 &   &   &  &  &  & \\
+				\hline
+				42 &   &   &  &  &  & \\
+				\hline
+				43 &   &   &  &  &  & \\
+				\hline
+				44 &   &   &  &  &  & \\
+				\hline
+				45 &   &   &  &  &  & \\
+				\hline
+				46 &   &   &  &  &  & \\
+				\hline
+				47 &   &   &  &  &  & \\
+				\hline
+				48 &   &   &  &  &  & \\
+				\hline
+				49 &   &   &  &  &  & \\
+				\hline
+				50 &   &   &  &  &  & \\
+				\hline
+				51 &   &   &  &  &  & \\
+				\hline
+				52 &   &   &  &  &  & \\
+				\hline
+			\end{tabular}\par\vskip-1.4pt
+			
+			\begin{tabular}{|m{5mm}|m{7mm}|m{25mm}|m{15mm}|m{8mm}|m{5cm}|m{1mm}|m{1mm}|m{1mm}|m{7mm}|m{10.5mm}|}
+				& & & & & \multicolumn{6}{c|}{\multirow{3}{*}{\it ТПЖА.712002.051 ДКР}}  \\ \cline {1-5}
+				& & & & &\multicolumn{6}{l|}{}     \\ \cline {1-5}
+				\it \scriptsize	Изм & \scriptsize Лист & № \scriptsize докум. &\it \scriptsize Подпись &\it \scriptsize Дата &\multicolumn{6}{l|}{}   \\
+				\hline
+				\multicolumn{2}{|l|}{\it \scriptsize Разраб.} & \scriptsize Ердяков Р.А. & & &  & \multicolumn{3}{l|}{\it \scriptsize Литер} &\it \scriptsize Лист & \it \scriptsize Листов   \\ \cline {1-5} \cline {7-11} 
+				\multicolumn{2}{|l|}{\it \scriptsize Пров.} & \scriptsize Родионов К.В. & & &\it \centering Крышка &П & & & 1 & 1   \\ \cline {1-5} \cline {7-11} 
+				\multicolumn{2}{|l|}{\it \scriptsize Т. контр} & & & & \it \centering Технологический процесс & \multicolumn{5}{c|}{\multirow{3}{*}{\it Кафедра ФАВТ }} \\ \cline {1-5}
+				\multicolumn{2}{|l|}{\it \scriptsize Н. контр} & & & & \it \centering механической обработки & \multicolumn{5}{c|}{\multirow{3}{*}{\it ИТб-1302-02-20}}\\ \cline {1-5}
+				\multicolumn{2}{|l|}{\it \scriptsize Утв}      & & & & &\multicolumn{5}{l|}{\multirow{3}{*}{}}  \\ \cline {1-5}
+				\hline
+				
+			\end{tabular}
+			
+		\end{flushleft}
+              \end{table}
+\newpage
+\begin{table}[h!]
+  \it
+  \centering
+  \begin{tabular}{|m{149.2mm}|}
+    \hline
+    \begin{minipage}[t]{0.8\textwidth}
+      \centering
+      \vspace{2em}
+      \large
+      Содержание
+      \begin{itemize}
+        \setlength{\itemindent}{-0.5cm}
+      \item[\textbf{}] Введение \dotfill 3
+      \end{itemize}
+      \begin{itemize}
+      \item[\textbf{1.}] Кинематический расчет привода \dotfill 4
+        \begin{itemize}
+        \item[\textbf{1.1}] Выбор электрического двигателя \dotfill4
+        \item[\textbf{1.2}] Кинематический расчёт \dotfill6
+          \setlength{\itemindent}{1cm}
+        \item[\textbf{1.2.1}]  Определение общих передаточных чисел \dotfill6
+        \item[\textbf{1.2.2}]  Выбор чисел зубьев для зубчатых пар  \dotfill8
+          \setlength{\itemindent}{0cm}
+        \item[\textbf{1.3}] Определение крутящих моментов на валах привода \dotfill9   
+        \end{itemize}
+      \item[\textbf{2.}] Расчет зубчатой ремённой передачи \dotfill 10
+      \end{itemize}
+      \begin{itemize}
+      \item[\textbf{3.}] Расчет цилиндрических зубчатых колёс \dotfill 15
+        \begin{itemize}
+        \item[\textbf{3.1}] Расчет прямозубых передач  \dotfill 15
+          \setlength{\itemindent}{1cm}
+        \item[\textbf{3.1.1}] Выбор материала колёс  \dotfill 15
+        \item[\textbf{3.1.2}] Проектировочный расчет  \dotfill 16
+        \item[\textbf{3.1.3}] Проверочный расчет  \dotfill 22
+        \end{itemize}
+      \item[\textbf{4.}] Расчет валов \dotfill 25
+        \begin{itemize}
+        \item[\textbf{4.1}]  Предварительный расчет валов \dotfill 25
+        \item[\textbf{4.2}]  Проверочный расчет \dotfill 28
+          \setlength{\itemindent}{1cm}
+        \item[\textbf{4.2.1}]  Расчет тихоходного вала \dotfill 28
+        \item[\textbf{4.2.2}]  Расчет тихоходного вала \dotfill 30
+        \item[\textbf{4.2.3}]  Расчет тихоходного вала \dotfill 32
+          \setlength{\itemindent}{0cm}
+        \item[\textbf{4.3}]  Расчет и подбор подшипников 33
+        \end{itemize}
+      \item[\textbf{5.}] Подбор муфт \dotfill 35
+        \begin{itemize}
+        \item[\textbf{5.1}]  Подбор и расчёт упругой муфты \dotfill 35
+        \item[\textbf{5.2}]  Подбор многодисковой фрикционной муфты \dotfill 36
+        \end{itemize}
+      \end{itemize}
+      \vspace{6em}
+    \end{minipage} \\
+    \hline
+  \end{tabular}\par\vskip-1.4pt
+  \begin{tabular}{|m{4mm}|m{6mm}|m{19mm}|m{10mm}|m{6mm}|m{4cm}|m{1mm}|m{1mm}|m{1mm}|m{7mm}|m{9.5mm}|}
+    \hline
+    & & & & & \multicolumn{6}{c|}{\multirow{3}{*}{ТПЖА.712002.051 ДКР}} \\ \cline {1-5}
+    & & & & &\multicolumn{6}{l|}{} \\ \cline {1-5}
+    \scriptsize \hspace{-0.6em}Изм & \scriptsize Лист &  \scriptsize № докум. &  \scriptsize \hspace{-1em} Подпись &  \scriptsize \hspace{-1em} Дата &\multicolumn{6}{l|}{}   \\
+    \hline
+    \multicolumn{2}{|l|}{\hspace{-0.8em} \scriptsize Разраб.} &  \scriptsize \hspace{-0.8em} Ердяков Р.А. & & &  & \multicolumn{3}{l|}{ \scriptsize Литер} &  \scriptsize Лист &  \scriptsize Листов   \\ \cline {1-5} \cline {7-11} 
+    \multicolumn{2}{|l|}{\hspace{-0.8em} \scriptsize Пров.} &  \scriptsize \hspace{-0.8em} Родионов К.В. & & &\centering Крышка. &П & & & 1 & 1  \\ \cline {1-5} \cline {7-11} 
+    \multicolumn{2}{|l|}{\hspace{-0.8em} \scriptsize Т. контр} & & & &\centering Технологический процесс & \multicolumn{5}{c|}{\multirow{3}{*}{Кафедра CАУ}} \\ \cline {1-5}
+    \multicolumn{2}{|l|}{\hspace{-0.8em} \scriptsize Н. контр} & & & &\centering механической обработки & \multicolumn{5}{c|}{\multirow{3}{*}{Группа Итб 1302-02-20}}\\ \cline {1-5}
+    \multicolumn{2}{|l|}{\hspace{-0.8em} \scriptsize Утв.}     & & & & &\multicolumn{5}{l|}{\multirow{3}{*}{}}  \\ \cline {1-5}
+    \hline		
+  \end{tabular}
+\end{table}
+
 \end{document}

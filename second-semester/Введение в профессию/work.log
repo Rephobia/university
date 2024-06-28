@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.23)  27 JUN 2024 09:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.23)  27 JUN 2024 11:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -805,24 +805,24 @@ Overfull \hbox (4.84175pt too wide) in paragraph at lines 256--256
  []
 
 
-LaTeX Warning: Float too large for page by 39.77287pt on input line 265.
+LaTeX Warning: Float too large for page by 39.77287pt on input line 266.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (4.17926pt too wide) in paragraph at lines 328--328
+Overfull \hbox (1.9197pt too wide) in paragraph at lines 328--328
+[]|\T2A/cmr/m/it/7 Изм| 
+ []
+
+
+Overfull \hbox (1.33398pt too wide) in paragraph at lines 328--328
 []|\T2A/cmr/m/it/7 Лист| 
  []
 
 
 Overfull \hbox (1.33398pt too wide) in paragraph at lines 330--330
 []|\T2A/cmr/m/it/7 Лист| 
- []
-
-
-Overfull \hbox (2.23158pt too wide) in paragraph at lines 330--330
-[]|\T2A/cmr/m/it/7 Листов| 
  []
 
 
@@ -850,7 +850,7 @@ Here is how much of TeX's memory you used:
  27974 multiletter control sequences out of 15000+600000
  578583 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,13n,79p,554b,498s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,13n,79p,556b,536s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/tex
 live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2024/texmf-dis
@@ -870,7 +870,7 @@ live/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><c:/texlive/2024/
 texmf-dist/fonts/type1/public/cm-super/sfti0700.pfb><c:/texlive/2024/texmf-dist
 /fonts/type1/public/cm-super/sfti1000.pfb><c:/texlive/2024/texmf-dist/fonts/typ
 e1/public/cm-super/sfti1200.pfb>
-Output written on work.pdf (4 pages, 319255 bytes).
+Output written on work.pdf (4 pages, 318270 bytes).
 PDF statistics:
  123 PDF objects out of 1000 (max. 8388607)
  74 compressed objects within 1 object stream

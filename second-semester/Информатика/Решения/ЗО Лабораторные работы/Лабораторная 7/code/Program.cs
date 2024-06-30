@@ -2,7 +2,6 @@
 
 internal class Program
 {
-
     static double Average(int[,] matrix)
     {
         double sum = 0;
@@ -63,6 +62,22 @@ internal class Program
 
         return result;
     }
+
+    static void PrintMatrix(String title, int[,] matrix)
+    {
+        Console.WriteLine(title);
+
+        for (int i = 0; i < matrix.GetLength(0); i++)
+        {
+            for (int j = 0; j < matrix.GetLength(1); j++)
+            {
+                Console.Write(matrix[i, j] + "\t");
+            }
+            Console.WriteLine();
+        }
+        Console.WriteLine("Среднее арифметическое: " + Average(matrix));
+    }
+
     static void Main(string[] args)
     {
         Console.WriteLine("Введите число строк:");
@@ -80,29 +95,9 @@ internal class Program
                 inputMatrix[i, j] = Convert.ToInt32(Console.ReadLine());
             }
         }
-
     
-        for (int i = 0; i < rows; i++)
-        {
-            for (int j = 0; j < columns; j++)
-            {
-                Console.Write(inputMatrix[i, j] + "\t");
-            }
-            Console.WriteLine();
-        }
-
-
-        Console.WriteLine(Average(inputMatrix));
-        int[,] result = SwapLastRow(inputMatrix);
-        Console.WriteLine("Результат");
-        for (int i = 0; i < rows; i++)
-        {
-            for (int j = 0; j < columns; j++)
-            {
-                Console.Write(result[i, j] + "\t");
-            }
-            Console.WriteLine();
-        }
+        PrintMatrix("Исходный массив: ", inputMatrix);
+        PrintMatrix("Сформированный массив: ", SwapLastRow(inputMatrix));
 
         Console.ReadKey();
     }

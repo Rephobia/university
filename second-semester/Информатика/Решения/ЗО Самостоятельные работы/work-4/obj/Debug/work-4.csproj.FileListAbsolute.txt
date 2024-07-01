@@ -1,0 +1,7 @@
+D:\university\second-semester\Информатика\Решения\ЗО Самостоятельные работы\work-4\bin\Debug\work-4.exe.config
+D:\university\second-semester\Информатика\Решения\ЗО Самостоятельные работы\work-4\bin\Debug\work-4.exe
+D:\university\second-semester\Информатика\Решения\ЗО Самостоятельные работы\work-4\bin\Debug\work-4.pdb
+D:\university\second-semester\Информатика\Решения\ЗО Самостоятельные работы\work-4\obj\Debug\work-4.csproj.AssemblyReference.cache
+D:\university\second-semester\Информатика\Решения\ЗО Самостоятельные работы\work-4\obj\Debug\work-4.csproj.CoreCompileInputs.cache
+D:\university\second-semester\Информатика\Решения\ЗО Самостоятельные работы\work-4\obj\Debug\work-4.exe
+D:\university\second-semester\Информатика\Решения\ЗО Самостоятельные работы\work-4\obj\Debug\work-4.pdb

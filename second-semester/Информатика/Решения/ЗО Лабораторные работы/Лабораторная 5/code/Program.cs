@@ -14,7 +14,7 @@ class Program
         double sum = 0;
         do
         {
-            u = Factorial(3 * n - 2) / denominator;
+            u = Math.Abs(Factorial(3 * n - 2) / denominator);
             denominator *= (98 + 2 * n);
             sum += u;
 

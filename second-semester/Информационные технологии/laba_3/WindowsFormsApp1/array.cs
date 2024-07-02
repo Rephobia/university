@@ -40,32 +40,58 @@ namespace WindowsFormsApp1
             }
         }
 
-        private int GetMaxIndex(int[] a, int i, int j)
+        private int GetMaxIndex(int[] a, int i, int j, ref int sr, ref int obm)
         {
             if (i == j) { 
                 return i;
             }
 
-            int k = GetMaxIndex(a, i + 1, j);
-
+            int k = GetMaxIndex(a, i + 1, j, ref sr, ref obm);
+            sr++;
             return (a[i] > a[k]) ? i : k;
         }
 
-        public void SelectSortRecursive(int[] a, int n, int index)
+        public void SelectSortRecursive(int[] a, int n, int index, ref int sr, ref int obm)
         {
             if (index == n)
             {
                 return;
             }
 
-            int max = GetMaxIndex(a, index, n - 1);
+            int max = GetMaxIndex(a, index, n - 1, ref sr, ref obm);
 
             if (max != index)
             {
                 swap(ref a[max], ref a[index]);
+                obm++;
             }
 
-            SelectSortRecursive(a, n, index + 1);
+            SelectSortRecursive(a, n, index + 1, ref sr, ref obm);
+        }
+
+        public void ShellSort(int[] a, ref int sr, ref int obm)
+        {
+            //расстояние между элементами, которые сравниваются
+            var d = a.Length / 2;
+
+            while (d >= 1)
+            {
+                for (var i = d; i < a.Length; i++)
+                {
+                    var j = i;
+
+                    while ((j >= d) && (a[j - d] > a[j]))
+                    {
+                        sr++;
+                        swap(ref a[j], ref a[j - d]);
+                        obm++;
+                        j = j - d;
+                    }
+                }
+                sr++;
+                d /= 2;
+     
+            }
         }
 
         public void InsertSort(int[] a, ref int sr, ref int obm)

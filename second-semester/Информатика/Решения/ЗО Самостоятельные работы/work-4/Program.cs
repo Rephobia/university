@@ -14,7 +14,7 @@ internal class Program
         double firstCheck = Math.Pow(Math.Abs(a), b) - 2;
         double secondCheck = b * (Math.Pow(c, 3) - 1);
 
-        while (firstCheck < 0 && secondCheck <= 0)
+        while (firstCheck < 0 && secondCheck != 0)
         {
             Console.WriteLine("Данные не в области определения функции!");
             Console.WriteLine("Введите a:");

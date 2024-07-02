@@ -13,12 +13,10 @@ internal class Program
         Console.WriteLine("Введите первый элемент");
         double a = Convert.ToDouble(Console.ReadLine());
 
-        double prevElement = a;
         for (int i = 0; i < n; i++)
         {
-            double element = b * prevElement + c;
-            prevElement = element;
-            Console.WriteLine(element + "\t");
+            a = b * a + c;
+            Console.WriteLine(a + "\t");
         }
         Console.ReadKey();
     }

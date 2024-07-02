@@ -135,14 +135,18 @@ namespace WindowsFormsApp1
                 }
             }
         }
-        Department[] departments = new Department[10];
+        List<Department> departments = new List<Department> { };
         int count = 0;
         private void button3_Click(object sender, EventArgs e)
         {
-            departments[count].name = textBox4.Text;
-            departments[count].semestr = textBox5.Text;
-            departments[count].group = textBox6.Text;
-            departments[count].employee = this.worker[(comboBox3.SelectedItem as ComboBoxPairItem).Key];
+            this.departments.Add(new Department(
+                            textBox4.Text,
+                            this.worker[(comboBox3.SelectedItem as ComboBoxPairItem).Key],
+                            textBox5.Text,
+                        textBox6.Text
+           ));
+
+
             
             dataGridView3.Rows.Add(
                 departments[count].name,
@@ -151,6 +155,31 @@ namespace WindowsFormsApp1
                 departments[count].group
                 );
             count++;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.departments.Sort(
+                delegate (Department x, Department y) { return x.employee.FIO.CompareTo(y.employee.FIO); }
+                );
+
+            dataGridView3.Rows.Clear();
+            dataGridView3.Columns.Clear();
+            dataGridView3.ColumnCount = 5;
+            dataGridView3.Columns[0].HeaderText = "Название";
+            dataGridView3.Columns[1].HeaderText = "ФИО";
+            dataGridView3.Columns[2].HeaderText = "Семестр";
+            dataGridView3.Columns[3].HeaderText = "Группа";
+
+            foreach (var department in this.departments)
+            {
+                dataGridView3.Rows.Add(
+                    department.name,
+                    department.employee.FIO,
+                    department.semestr,
+                    department.group
+                    );
+            }
         }
     }
 }

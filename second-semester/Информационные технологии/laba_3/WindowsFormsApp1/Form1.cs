@@ -193,6 +193,7 @@ namespace WindowsFormsApp1
             sort_shell.a = (int[])base_a.Clone();
             sr = 0; obm = 0;
             textBox1.Text += "Сортировка Шелла " + Environment.NewLine;
+            sort_bubble.ShellSort(sort_bubble.a, ref sr, ref obm);
             output_textBox(sort_shell.a, n);
             output_dataGridView(count, sr, obm, 4);
             chart4.Series[0].Points.AddXY(n, sr);
@@ -284,6 +285,10 @@ namespace WindowsFormsApp1
             сохранитьГрафикСортировкиВставкамиToolStripMenuItem_Click(sender, e);
             сохранитьГрафикСортировкиВыборомToolStripMenuItem_Click(sender, e);
             сохранитьГрафикСортировкиПузырькомToolStripMenuItem_Click(sender, e);
+            сохранитьГрафикСортировкиШеллаToolStripMenuItem_Click(sender, e);
+            сохранитьГрафикВсРПузЦToolStripMenuItem_Click(sender, e);
+            сохранитьГрафикШеллПузЦToolStripMenuItem_Click(sender, e);
+
         }
         private void сохранитьГрафикСортировкиВставкамиToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -355,6 +360,57 @@ namespace WindowsFormsApp1
         private void цикламиToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             this.currentMode = this.cycleMode;
+        }
+
+        private void сохранитьГрафикСортировкиШеллаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (SaveFileDialog saveGr2 = new SaveFileDialog())
+            {
+                saveGr2.Title = "Сохранить график как ...";
+                saveGr2.Filter = "*.jpg|*.jpg";
+                saveGr2.AddExtension = true;
+                saveGr2.FileName = "Шелл";
+                if (saveGr2.ShowDialog() ==
+                System.Windows.Forms.DialogResult.OK)
+                {
+                    chart4.SaveImage(saveGr2.FileName,
+                    System.Windows.Forms.DataVisualization.Charting.ChartImageFormat.Png);
+                }
+            }
+        }
+
+        private void сохранитьГрафикВсРПузЦToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (SaveFileDialog saveGr2 = new SaveFileDialog())
+            {
+                saveGr2.Title = "Сохранить график как ...";
+                saveGr2.Filter = "*.jpg|*.jpg";
+                saveGr2.AddExtension = true;
+                saveGr2.FileName = "ВсР-ПузЦ";
+                if (saveGr2.ShowDialog() ==
+                System.Windows.Forms.DialogResult.OK)
+                {
+                    chart5.SaveImage(saveGr2.FileName,
+                    System.Windows.Forms.DataVisualization.Charting.ChartImageFormat.Png);
+                }
+            }
+        }
+
+        private void сохранитьГрафикШеллПузЦToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (SaveFileDialog saveGr2 = new SaveFileDialog())
+            {
+                saveGr2.Title = "Сохранить график как ...";
+                saveGr2.Filter = "*.jpg|*.jpg";
+                saveGr2.AddExtension = true;
+                saveGr2.FileName = "Шелл-ПузЦ";
+                if (saveGr2.ShowDialog() ==
+                System.Windows.Forms.DialogResult.OK)
+                {
+                    chart6.SaveImage(saveGr2.FileName,
+                    System.Windows.Forms.DataVisualization.Charting.ChartImageFormat.Png);
+                }
+            }
         }
     }
 }

@@ -80,7 +80,7 @@ namespace WindowsFormsApp1
                 {
                     var j = i;
 
-                    while ((j >= d) && (a[j - d] > a[j]))
+                    while ((j >= d) && (a[j - d] < a[j]))
                     {
                         sr++;
                         swap(ref a[j], ref a[j - d]);
@@ -123,6 +123,33 @@ namespace WindowsFormsApp1
                         obm++;
                     }
                 }
+            }
+        }
+        public void InsertSortReqursive(int[] a, ref int sr, ref int obm, int i = 1)
+        {
+            if (i >= a.Length) return;
+            int currentNumber = a[i]; // Текущий элемент, который нужно вставить в отсортированную часть
+
+            InsertIntoSortedArray(a, i, currentNumber, ref sr, ref obm);
+            i++;
+
+            InsertSortReqursive(a, ref sr, ref obm, i);
+        }
+
+        private void InsertIntoSortedArray(int[] a, int i, int currentNumber, ref int sr, ref int obm)
+        {
+            if (i > 0 && currentNumber > a[i - 1])
+            {
+                sr++; // Увеличиваем счётчик сравнений при каждом сравнении
+                a[i] = a[i - 1]; // Перемещаем элемент на одну позицию вправо
+                i--; // Переходим к следующему элементу слева
+                obm++; // Увеличиваем счётчик обменов при каждом перемещении
+                InsertIntoSortedArray(a, i, currentNumber, ref sr, ref obm);
+            }
+            else
+            {
+                a[i] = currentNumber;
+                obm++;
             }
         }
     }

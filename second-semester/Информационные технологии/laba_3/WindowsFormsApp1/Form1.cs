@@ -43,6 +43,23 @@ namespace WindowsFormsApp1
             chart3.Series[1].Color = Color.Blue;
             chart3.Series[0].LegendText = "Сравнения";
             chart3.Series[1].LegendText = "Обмены";
+
+            /*
+            chart5.Series[0].BorderWidth = 3;
+            chart5.Series[0].Color = Color.Red;
+            chart5.Series[1].BorderWidth = 3;
+            chart5.Series[1].Color = Color.Blue;
+            chart5.Series[0].LegendText = "Сравнения";
+            chart5.Series[1].LegendText = "Обмены";
+
+            
+            chart5.Series[2].BorderWidth = 3;
+            chart5.Series[2].Color = Color.Red;
+            chart5.Series[1].BorderWidth = 3;
+            chart5.Series[1].Color = Color.Blue;
+            chart5.Series[0].LegendText = "Сравнения";
+            chart5.Series[1].LegendText = "Обмены";
+            */
         }
         public void output_textBox(int[] out_a, int n) //вывод массива в textBox
         {
@@ -75,7 +92,7 @@ namespace WindowsFormsApp1
             dataGridView3.ColumnCount = 3;
             dataGridView4.ColumnCount = 3;
             dataGridView3.Columns[0].HeaderText = "Размер";
-            dataGridView3.Columns[1].HeaderText = "Выбор";
+            dataGridView3.Columns[1].HeaderText = "Вставка";
             dataGridView3.Columns[2].HeaderText = "Пузырек";
 
             dataGridView4.Columns[0].HeaderText = "Размер";
@@ -93,6 +110,7 @@ namespace WindowsFormsApp1
             ArraySort sort_insert = new ArraySort();
             ArraySort sort_bubble = new ArraySort();
             ArraySort sort_shell = new ArraySort();
+            ArraySort insert_sort = new ArraySort();
             for (n = Convert.ToInt32(numericUpDown1.Value);
                 n <= Convert.ToInt32(numericUpDown2.Value);
                 n += Convert.ToInt32(numericUpDown3.Value))
@@ -134,6 +152,7 @@ namespace WindowsFormsApp1
                     this.ExecuteRecursiveMode(
                         base_a,
                         sort_select,
+                        sort_insert,
                         ref sr,
                         ref obm,
                         ref count,
@@ -143,7 +162,7 @@ namespace WindowsFormsApp1
 
                 this.CountTime(
                         base_a,
-                        sort_select,
+                        insert_sort,
                         sort_shell,
                         sort_bubble,
                         count,
@@ -181,6 +200,7 @@ namespace WindowsFormsApp1
             output_dataGridView(count, sr, obm, 2);
             chart2.Series[0].Points.AddXY(n, sr);
             chart2.Series[1].Points.AddXY(n, obm);
+
             sort_bubble.a = (int[])base_a.Clone();
             sr = 0; obm = 0;
             sort_bubble.BubbleSort(sort_bubble.a, ref sr, ref obm);
@@ -193,7 +213,7 @@ namespace WindowsFormsApp1
             sort_shell.a = (int[])base_a.Clone();
             sr = 0; obm = 0;
             textBox1.Text += "Сортировка Шелла " + Environment.NewLine;
-            sort_bubble.ShellSort(sort_bubble.a, ref sr, ref obm);
+            sort_shell.ShellSort(sort_shell.a, ref sr, ref obm);
             output_textBox(sort_shell.a, n);
             output_dataGridView(count, sr, obm, 4);
             chart4.Series[0].Points.AddXY(n, sr);
@@ -202,22 +222,27 @@ namespace WindowsFormsApp1
         }
         private void CountTime(
             int[] base_a,
-            ArraySort sort_select,
+            ArraySort insert_sort,
             ArraySort sort_bubble,
             ArraySort sort_shell,
             int count,
             int n
             )
         {
-            sort_select.a = (int[])base_a.Clone();
+            insert_sort.a = (int[])base_a.Clone();
             int sr = 0; int obm = 0;
             Stopwatch stopwatch = Stopwatch.StartNew();
-            sort_select.SelectSortRecursive(sort_select.a, sort_select.a.Length, 0, ref sr, ref obm);
+            insert_sort.InsertSortReqursive(insert_sort.a, ref sr, ref obm);
             stopwatch.Stop();
             long time = stopwatch.ElapsedTicks;
             dataGridView3.Rows[count - 1].Cells[1].Value = time;
-            chart5.Series[0].Points.AddXY(n, time);
+            //chart5.Series[0].Points.AddXY(n, time);
+            chart5.Series[0].Points.AddXY(n, sr);
+            chart5.Series[1].Points.AddXY(n, obm);
 
+
+
+            sort_bubble.a = (int[])base_a.Clone();
             sr = 0; obm = 0;
             stopwatch = Stopwatch.StartNew();
             sort_bubble.BubbleSort(sort_bubble.a, ref sr, ref obm);
@@ -225,8 +250,13 @@ namespace WindowsFormsApp1
             time = stopwatch.ElapsedTicks;
             dataGridView3.Rows[count - 1].Cells[2].Value = time;
             dataGridView4.Rows[count - 1].Cells[1].Value = time;
-            chart5.Series[1].Points.AddXY(n, time);
-            chart6.Series[1].Points.AddXY(n, time);
+            // chart5.Series[1].Points.AddXY(n, time);
+            //chart6.Series[1].Points.AddXY(n, time);
+            chart5.Series[2].Points.AddXY(n, sr);
+            chart5.Series[3].Points.AddXY(n, obm);
+            chart6.Series[2].Points.AddXY(n, sr);
+            chart6.Series[3].Points.AddXY(n, obm);
+
 
             sort_shell.a = (int[])base_a.Clone();
             sr = 0; obm = 0;
@@ -235,12 +265,14 @@ namespace WindowsFormsApp1
             stopwatch.Stop();
             time = stopwatch.ElapsedTicks;
             dataGridView4.Rows[count - 1].Cells[2].Value = time;
-            chart6.Series[0].Points.AddXY(n, time);
-
+            //chart6.Series[0].Points.AddXY(n, time);
+            chart6.Series[0].Points.AddXY(n, sr);
+            chart6.Series[1].Points.AddXY(n, obm);
         }
         private void ExecuteRecursiveMode(
             int[] base_a,
             ArraySort sort_select,
+            ArraySort sort_insert,
             ref int sr,
             ref int obm,
             ref int count,
@@ -251,6 +283,22 @@ namespace WindowsFormsApp1
             sort_select.SelectSortRecursive(sort_select.a, sort_select.a.Length, 0, ref sr, ref obm);
             chart1.Series[0].Points.AddXY(n, sr);
             chart1.Series[1].Points.AddXY(n, obm);
+            textBox1.Text += "Сортировка Выбором " + Environment.NewLine;
+            output_textBox(sort_select.a, n);
+            output_dataGridView(count, sr, obm, 1);
+            chart1.Series[0].Points.AddXY(n, sr);
+            chart1.Series[1].Points.AddXY(n, obm);
+
+
+            sort_insert.a = (int[])base_a.Clone();
+            sr = 0; obm = 0;
+            sort_insert.InsertSortReqursive(sort_insert.a, ref sr, ref obm);
+            textBox1.Text += "Сортировка вставками " + Environment.NewLine;
+            output_textBox(sort_insert.a, n);
+            output_dataGridView(count, sr, obm, 2);
+            chart2.Series[0].Points.AddXY(n, sr);
+            chart2.Series[1].Points.AddXY(n, obm);
+
 
             count++;
         }
@@ -277,8 +325,12 @@ namespace WindowsFormsApp1
             chart4.Series[1].Points.Clear();
             chart5.Series[0].Points.Clear();
             chart5.Series[1].Points.Clear();
+            chart5.Series[2].Points.Clear();
+            chart5.Series[3].Points.Clear();
             chart6.Series[0].Points.Clear();
             chart6.Series[1].Points.Clear();
+            chart6.Series[2].Points.Clear();
+            chart6.Series[3].Points.Clear();
         }
         private void сохранитьВсёГрафикиToolStripMenuItem_Click(object sender, EventArgs e)
         {

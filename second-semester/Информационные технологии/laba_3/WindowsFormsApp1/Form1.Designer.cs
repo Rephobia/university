@@ -28,30 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea19 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend19 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series37 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series38 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea20 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend20 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series39 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series40 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea21 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend21 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series41 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series42 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea22 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend22 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series43 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series44 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea23 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend23 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series45 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series46 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea24 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend24 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series47 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series48 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,6 +63,9 @@
             this.сохранитьГрафикСортировкиВставкамиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сохранитьГрафикСортировкиВыборомToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сохранитьГрафикСортировкиПузырькомToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.сохранитьГрафикСортировкиШеллаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.сохранитьГрафикВсРПузЦToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.сохранитьГрафикШеллПузЦToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выборСортировкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.рекурсивнымиФункциямиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.цикламиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -119,9 +126,6 @@
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chart6 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.сохранитьГрафикСортировкиШеллаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.сохранитьГрафикВсРПузЦToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.сохранитьГрафикШеллПузЦToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -216,6 +220,27 @@
             this.сохранитьГрафикСортировкиПузырькомToolStripMenuItem.Size = new System.Drawing.Size(387, 26);
             this.сохранитьГрафикСортировкиПузырькомToolStripMenuItem.Text = "Сохранить график сортировки пузырьком";
             this.сохранитьГрафикСортировкиПузырькомToolStripMenuItem.Click += new System.EventHandler(this.сохранитьГрафикСортировкиПузырькомToolStripMenuItem_Click);
+            // 
+            // сохранитьГрафикСортировкиШеллаToolStripMenuItem
+            // 
+            this.сохранитьГрафикСортировкиШеллаToolStripMenuItem.Name = "сохранитьГрафикСортировкиШеллаToolStripMenuItem";
+            this.сохранитьГрафикСортировкиШеллаToolStripMenuItem.Size = new System.Drawing.Size(387, 26);
+            this.сохранитьГрафикСортировкиШеллаToolStripMenuItem.Text = "Сохранить график сортировки Шелла";
+            this.сохранитьГрафикСортировкиШеллаToolStripMenuItem.Click += new System.EventHandler(this.сохранитьГрафикСортировкиШеллаToolStripMenuItem_Click);
+            // 
+            // сохранитьГрафикВсРПузЦToolStripMenuItem
+            // 
+            this.сохранитьГрафикВсРПузЦToolStripMenuItem.Name = "сохранитьГрафикВсРПузЦToolStripMenuItem";
+            this.сохранитьГрафикВсРПузЦToolStripMenuItem.Size = new System.Drawing.Size(387, 26);
+            this.сохранитьГрафикВсРПузЦToolStripMenuItem.Text = "Сохранить график ВсР<->ПузЦ";
+            this.сохранитьГрафикВсРПузЦToolStripMenuItem.Click += new System.EventHandler(this.сохранитьГрафикВсРПузЦToolStripMenuItem_Click);
+            // 
+            // сохранитьГрафикШеллПузЦToolStripMenuItem
+            // 
+            this.сохранитьГрафикШеллПузЦToolStripMenuItem.Name = "сохранитьГрафикШеллПузЦToolStripMenuItem";
+            this.сохранитьГрафикШеллПузЦToolStripMenuItem.Size = new System.Drawing.Size(387, 26);
+            this.сохранитьГрафикШеллПузЦToolStripMenuItem.Text = "Сохранить график Шелл <-> ПузЦ";
+            this.сохранитьГрафикШеллПузЦToolStripMenuItem.Click += new System.EventHandler(this.сохранитьГрафикШеллПузЦToolStripMenuItem_Click);
             // 
             // выборСортировкиToolStripMenuItem
             // 
@@ -614,24 +639,24 @@
             // 
             // chart1
             // 
-            chartArea19.AxisX.Title = "Размер массива";
-            chartArea19.AxisY.Title = "Количество";
-            chartArea19.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea19);
-            legend19.Name = "Legend1";
-            this.chart1.Legends.Add(legend19);
+            chartArea1.AxisX.Title = "Размер массива";
+            chartArea1.AxisY.Title = "Количество";
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(3, 6);
             this.chart1.Name = "chart1";
-            series37.ChartArea = "ChartArea1";
-            series37.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series37.Legend = "Legend1";
-            series37.Name = "Сравнения";
-            series38.ChartArea = "ChartArea1";
-            series38.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series38.Legend = "Legend1";
-            series38.Name = "Обмены";
-            this.chart1.Series.Add(series37);
-            this.chart1.Series.Add(series38);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Legend = "Legend1";
+            series1.Name = "Сравнения";
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.Legend = "Legend1";
+            series2.Name = "Обмены";
+            this.chart1.Series.Add(series1);
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(913, 213);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
@@ -649,24 +674,24 @@
             // 
             // chart2
             // 
-            chartArea20.AxisX.Title = "Размер массива";
-            chartArea20.AxisY.Title = "Количество";
-            chartArea20.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea20);
-            legend20.Name = "Legend1";
-            this.chart2.Legends.Add(legend20);
+            chartArea2.AxisX.Title = "Размер массива";
+            chartArea2.AxisY.Title = "Количество";
+            chartArea2.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart2.Legends.Add(legend2);
             this.chart2.Location = new System.Drawing.Point(5, 5);
             this.chart2.Name = "chart2";
-            series39.ChartArea = "ChartArea1";
-            series39.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series39.Legend = "Legend1";
-            series39.Name = "Сравнения";
-            series40.ChartArea = "ChartArea1";
-            series40.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series40.Legend = "Legend1";
-            series40.Name = "Обмены";
-            this.chart2.Series.Add(series39);
-            this.chart2.Series.Add(series40);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series3.Legend = "Legend1";
+            series3.Name = "Сравнения";
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series4.Legend = "Legend1";
+            series4.Name = "Обмены";
+            this.chart2.Series.Add(series3);
+            this.chart2.Series.Add(series4);
             this.chart2.Size = new System.Drawing.Size(913, 213);
             this.chart2.TabIndex = 1;
             this.chart2.Text = "chart2";
@@ -684,24 +709,24 @@
             // 
             // chart3
             // 
-            chartArea21.AxisX.Title = "Размер массива";
-            chartArea21.AxisY.Title = "Количество";
-            chartArea21.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea21);
-            legend21.Name = "Legend1";
-            this.chart3.Legends.Add(legend21);
+            chartArea3.AxisX.Title = "Размер массива";
+            chartArea3.AxisY.Title = "Количество";
+            chartArea3.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart3.Legends.Add(legend3);
             this.chart3.Location = new System.Drawing.Point(5, 5);
             this.chart3.Name = "chart3";
-            series41.ChartArea = "ChartArea1";
-            series41.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series41.Legend = "Legend1";
-            series41.Name = "Сравнения";
-            series42.ChartArea = "ChartArea1";
-            series42.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series42.Legend = "Legend1";
-            series42.Name = "Обмены";
-            this.chart3.Series.Add(series41);
-            this.chart3.Series.Add(series42);
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series5.Legend = "Legend1";
+            series5.Name = "Сравнения";
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series6.Legend = "Legend1";
+            series6.Name = "Обмены";
+            this.chart3.Series.Add(series5);
+            this.chart3.Series.Add(series6);
             this.chart3.Size = new System.Drawing.Size(913, 213);
             this.chart3.TabIndex = 1;
             this.chart3.Text = "chart3";
@@ -719,24 +744,24 @@
             // 
             // chart4
             // 
-            chartArea22.AxisX.Title = "Размер массива";
-            chartArea22.AxisY.Title = "Количество";
-            chartArea22.Name = "ChartArea1";
-            this.chart4.ChartAreas.Add(chartArea22);
-            legend22.Name = "Legend1";
-            this.chart4.Legends.Add(legend22);
+            chartArea4.AxisX.Title = "Размер массива";
+            chartArea4.AxisY.Title = "Количество";
+            chartArea4.Name = "ChartArea1";
+            this.chart4.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chart4.Legends.Add(legend4);
             this.chart4.Location = new System.Drawing.Point(5, 5);
             this.chart4.Name = "chart4";
-            series43.ChartArea = "ChartArea1";
-            series43.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series43.Legend = "Legend1";
-            series43.Name = "Сравнения";
-            series44.ChartArea = "ChartArea1";
-            series44.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series44.Legend = "Legend1";
-            series44.Name = "Обмены";
-            this.chart4.Series.Add(series43);
-            this.chart4.Series.Add(series44);
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series7.Legend = "Legend1";
+            series7.Name = "Сравнения";
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series8.Legend = "Legend1";
+            series8.Name = "Обмены";
+            this.chart4.Series.Add(series7);
+            this.chart4.Series.Add(series8);
             this.chart4.Size = new System.Drawing.Size(913, 213);
             this.chart4.TabIndex = 2;
             this.chart4.Text = "chart4";
@@ -792,24 +817,34 @@
             // 
             // chart5
             // 
-            chartArea23.AxisX.Title = "Размер массива";
-            chartArea23.AxisY.Title = "Количество";
-            chartArea23.Name = "ChartArea1";
-            this.chart5.ChartAreas.Add(chartArea23);
-            legend23.Name = "Legend1";
-            this.chart5.Legends.Add(legend23);
+            chartArea5.AxisX.Title = "Размер массива";
+            chartArea5.AxisY.Title = "Количество";
+            chartArea5.Name = "ChartArea1";
+            this.chart5.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.chart5.Legends.Add(legend5);
             this.chart5.Location = new System.Drawing.Point(406, 5);
             this.chart5.Name = "chart5";
-            series45.ChartArea = "ChartArea1";
-            series45.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series45.Legend = "Legend1";
-            series45.Name = "Сравнения";
-            series46.ChartArea = "ChartArea1";
-            series46.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series46.Legend = "Legend1";
-            series46.Name = "Обмены";
-            this.chart5.Series.Add(series45);
-            this.chart5.Series.Add(series46);
+            series9.ChartArea = "ChartArea1";
+            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series9.Legend = "Legend1";
+            series9.Name = "Сравнения ВсР";
+            series10.ChartArea = "ChartArea1";
+            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series10.Legend = "Legend1";
+            series10.Name = "Обмены ВсР";
+            series11.ChartArea = "ChartArea1";
+            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series11.Legend = "Legend1";
+            series11.Name = "Сравнения ПузЦ";
+            series12.ChartArea = "ChartArea1";
+            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series12.Legend = "Legend1";
+            series12.Name = "Обмены ПузЦ";
+            this.chart5.Series.Add(series9);
+            this.chart5.Series.Add(series10);
+            this.chart5.Series.Add(series11);
+            this.chart5.Series.Add(series12);
             this.chart5.Size = new System.Drawing.Size(512, 213);
             this.chart5.TabIndex = 3;
             this.chart5.Text = "chart5";
@@ -865,48 +900,37 @@
             // 
             // chart6
             // 
-            chartArea24.AxisX.Title = "Размер массива";
-            chartArea24.AxisY.Title = "Количество";
-            chartArea24.Name = "ChartArea1";
-            this.chart6.ChartAreas.Add(chartArea24);
-            legend24.Name = "Legend1";
-            this.chart6.Legends.Add(legend24);
+            chartArea6.AxisX.Title = "Размер массива";
+            chartArea6.AxisY.Title = "Количество";
+            chartArea6.Name = "ChartArea1";
+            this.chart6.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.chart6.Legends.Add(legend6);
             this.chart6.Location = new System.Drawing.Point(432, 5);
             this.chart6.Name = "chart6";
-            series47.ChartArea = "ChartArea1";
-            series47.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series47.Legend = "Legend1";
-            series47.Name = "Сравнения";
-            series48.ChartArea = "ChartArea1";
-            series48.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series48.Legend = "Legend1";
-            series48.Name = "Обмены";
-            this.chart6.Series.Add(series47);
-            this.chart6.Series.Add(series48);
+            series13.ChartArea = "ChartArea1";
+            series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series13.Legend = "Legend1";
+            series13.Name = "Сравнения Шелл";
+            series14.ChartArea = "ChartArea1";
+            series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series14.Legend = "Legend1";
+            series14.Name = "Обмены Шелл";
+            series15.ChartArea = "ChartArea1";
+            series15.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series15.Legend = "Legend1";
+            series15.Name = "Сравнения ПузЦ";
+            series16.ChartArea = "ChartArea1";
+            series16.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series16.Legend = "Legend1";
+            series16.Name = "Обмены ПузЦ";
+            this.chart6.Series.Add(series13);
+            this.chart6.Series.Add(series14);
+            this.chart6.Series.Add(series15);
+            this.chart6.Series.Add(series16);
             this.chart6.Size = new System.Drawing.Size(486, 213);
             this.chart6.TabIndex = 3;
             this.chart6.Text = "chart6";
-            // 
-            // сохранитьГрафикСортировкиШеллаToolStripMenuItem
-            // 
-            this.сохранитьГрафикСортировкиШеллаToolStripMenuItem.Name = "сохранитьГрафикСортировкиШеллаToolStripMenuItem";
-            this.сохранитьГрафикСортировкиШеллаToolStripMenuItem.Size = new System.Drawing.Size(387, 26);
-            this.сохранитьГрафикСортировкиШеллаToolStripMenuItem.Text = "Сохранить график сортировки Шелла";
-            this.сохранитьГрафикСортировкиШеллаToolStripMenuItem.Click += new System.EventHandler(this.сохранитьГрафикСортировкиШеллаToolStripMenuItem_Click);
-            // 
-            // сохранитьГрафикВсРПузЦToolStripMenuItem
-            // 
-            this.сохранитьГрафикВсРПузЦToolStripMenuItem.Name = "сохранитьГрафикВсРПузЦToolStripMenuItem";
-            this.сохранитьГрафикВсРПузЦToolStripMenuItem.Size = new System.Drawing.Size(387, 26);
-            this.сохранитьГрафикВсРПузЦToolStripMenuItem.Text = "Сохранить график ВсР<->ПузЦ";
-            this.сохранитьГрафикВсРПузЦToolStripMenuItem.Click += new System.EventHandler(this.сохранитьГрафикВсРПузЦToolStripMenuItem_Click);
-            // 
-            // сохранитьГрафикШеллПузЦToolStripMenuItem
-            // 
-            this.сохранитьГрафикШеллПузЦToolStripMenuItem.Name = "сохранитьГрафикШеллПузЦToolStripMenuItem";
-            this.сохранитьГрафикШеллПузЦToolStripMenuItem.Size = new System.Drawing.Size(387, 26);
-            this.сохранитьГрафикШеллПузЦToolStripMenuItem.Text = "Сохранить график Шелл <-> ПузЦ";
-            this.сохранитьГрафикШеллПузЦToolStripMenuItem.Click += new System.EventHandler(this.сохранитьГрафикШеллПузЦToolStripMenuItem_Click);
             // 
             // Form1
             // 

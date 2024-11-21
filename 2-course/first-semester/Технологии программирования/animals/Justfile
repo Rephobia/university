@@ -1,0 +1,9 @@
+default:
+    just install && just run
+    
+install:
+    mvn install
+
+run:
+    java -cp target/animals-1.0-SNAPSHOT.jar animals.Main
+

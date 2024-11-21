@@ -1,19 +1,28 @@
 package animals;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-        Animal[] animals = {
-                new Cat("Маркиз", 10),
-                new Cat("Барсик", 10),
-                new Dog("Питбуль", 10),
-                new Dog("Лев", 10),
-        };
+		Animal[] animals = {
+			new Cat("Маркиз", 11),
+			new Tiger("Барсик", 10),
+			new Dog("Питбуль", 12),
+			new Dog("Лев", 5),
+		};
 
-        for (Animal animal : animals) {
-            animal.swim(10);
-        }
-    }
+		System.out.println("Животные начинают заплыв:");
+	
+		for (Animal animal : animals) {
+			animal.swim(10);
+		}
+		
+		System.out.println("Животные начинают забег:");
+
+	        for (Animal animal : animals) {
+			animal.run(250);
+		}
+		
+		System.out.println();
+		System.out.println("Животных создано: " + Animal.animalCounter);
+	}
 }

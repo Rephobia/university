@@ -1,4 +1,4 @@
-package animals;
+package first_task;
 
 public class Tiger extends Animal{
 	public Tiger(String name, int age) {

@@ -1,4 +1,4 @@
-package animals;
+package first_task;
 
 public abstract class Animal {
 	private final String name;
@@ -38,5 +38,10 @@ public abstract class Animal {
 		} else {
 			System.out.println(this.getName() + " не справился");
 		}
+	}
+
+	public static void printAllAnimalsCount()
+	{
+		System.out.println("Животных создано: " + Animal.animalCounter);
 	}
 }

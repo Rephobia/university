@@ -1,4 +1,4 @@
-package animals;
+package first_task;
 
 public class Cat  extends Animal {
 

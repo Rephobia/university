@@ -33,6 +33,10 @@ public class MainController {
     public String doSomething() {
         return "index";
     }
+   @GetMapping("/login")
+    public String loginForm() {
+        return "login";
+    }
 
 /*
     @GetMapping("/hello")

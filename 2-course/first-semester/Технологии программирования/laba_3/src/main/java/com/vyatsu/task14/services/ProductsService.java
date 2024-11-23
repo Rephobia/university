@@ -27,4 +27,8 @@ public class ProductsService {
     public void add(Product product) {
         productRepository.save(product);
     }
+
+    public List<Product> getProductsByTitle(String title) {
+        return productRepository.findProductsByTitle(title);
+    }
 }

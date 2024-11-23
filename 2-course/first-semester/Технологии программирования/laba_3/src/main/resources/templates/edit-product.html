@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Товар</title>
+</head>
+<body>
+    <form th:action="@{'/products/edit'}" method="post">
+        <input type="hidden" th:field="${product.id}" />
+        <div>
+            <label for="title">Заголовок:</label>
+            <input type="text" id="title" th:field="${product.title}" placeholder="Enter product title" required />
+        </div>
+
+        <div>
+            <label for="price">Цена</label>
+            <input type="number" id="price" th:field="${product.price}" placeholder="Enter product price" step="1" required />
+        </div>
+
+        <div>
+            <button type="submit">Сохранить изменения</button>
+        </div>
+    </form>
+
+    <a href="/products">Вернутся</a>
+</body>
+</html>

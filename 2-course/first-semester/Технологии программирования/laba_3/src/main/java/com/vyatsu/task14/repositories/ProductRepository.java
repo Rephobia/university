@@ -73,4 +73,14 @@ public class ProductRepository {
 	public void delete(Long id) {
 		products.stream().filter(p -> p.getId().equals(id)).findFirst().ifPresent(products::remove);
 	}
+
+	public void edit(Long id, String title, Integer price) {
+		products.stream()
+			.filter(p -> p.getId().equals(id))
+			.findFirst()
+			.ifPresent(product -> {
+					product.setTitle(title);
+					product.setPrice(price); 
+				});
+	}
 }

@@ -44,6 +44,24 @@ public class ProductsController {
 		return "product-page";
 	}
 
+	@GetMapping("/edit/{id}")
+	public String editFormProduct(Model model, @PathVariable(value = "id") Long id) {
+		Product product = productsService.getById(id);
+		model.addAttribute("product", product);
+		return "edit-product";
+	}
+
+	@PostMapping("/edit")
+	public String editProduct(@RequestParam(value = "id", required = false) Long id,
+				  @RequestParam(value = "title", required = false) String title,
+				  @RequestParam(value = "price", required = false) Integer price,
+				  Model model) {
+		productsService.edit(id, title, price);
+		Product product = productsService.getById(id);
+		model.addAttribute("product", product);
+		return "edit-product";
+	}
+	
 	@PostMapping("/delete/{id}")
 	public String deleteProduct(Model model, @PathVariable(value = "id") Long id) {
 		productsService.delete(id);

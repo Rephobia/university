@@ -19,14 +19,11 @@ public class ProductsController {
 	}
 
 	@GetMapping
-	public String showProductsList(@RequestParam(value = "title", required = false) String title, Model model) {
-		List<Product> products;
-
-		if (title != null && !title.isEmpty()) {
-			products = productsService.getProductsByTitle(title);
-		} else {
-			products = productsService.getAllProducts();
-		}
+	public String showProductsList(@RequestParam(value = "title", required = false) String title,
+				       @RequestParam(value = "gt", required = false) Integer gt,
+				       @RequestParam(value = "lt", required = false) Integer lt,
+				       Model model) {
+		List<Product> products = productsService.filterProducts(title, gt, lt);
 
 		model.addAttribute("products", products);
 		model.addAttribute("product", new Product());

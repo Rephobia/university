@@ -35,4 +35,8 @@ public class ProductsService {
     public void delete(Long id) {
 	productRepository.delete(id);
     }
+
+    public List<Product> filterProducts(String title, Integer gt, Integer lt) {
+	return productRepository.filterProducts(title, gt, lt);
+    }
 }

@@ -39,6 +39,33 @@ public class ProductRepository {
 		return products.stream().filter(p -> p.getId().equals(id)).findFirst().get();
 	}
 
+	public List<Product> filterProducts(String title, Integer gt, Integer lt)
+	{
+		if (gt == null && lt == null && (title == null || title.isEmpty())) {
+			return products;
+		}
+		
+		List<Product> result = this.products;
+
+		if (title != null && !title.isEmpty()) {
+			result = this.findProductsByTitle(title);
+		}
+		
+		if (gt != null) {
+			result = result.stream()
+				.filter(product -> product.getPrice() >= gt)
+				.collect(Collectors.toList());
+		}
+
+		if (lt != null) {
+			result = result.stream()
+				.filter(product ->  product.getPrice() <= lt)
+				.collect(Collectors.toList());
+		}
+		
+		return result;
+	}
+	
 	public void save(Product product) {
 		products.add(product);
 	}

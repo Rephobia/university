@@ -25,7 +25,7 @@ public class ProductRepository {
 		products = new ArrayList<>();
 		Random rnd = new Random();
 		for (Long i = 1L; i < 101; i++) {
-			products.add(new Product(i, "Bread" + i, rnd.nextInt(1000)));
+			products.add(new Product(i, "Bread" + i, rnd.nextInt(1000), 0));
 		}
 	}
 
@@ -94,7 +94,15 @@ public class ProductRepository {
 			.findFirst()
 			.ifPresent(product -> {
 					product.setTitle(title);
-					product.setPrice(price); 
+					product.setPrice(price);
 				});
+	}
+	
+	public List<Product> getTop3MostViewedProducts() {
+		// return products;
+		return products.stream()
+			.sorted((p1, p2) -> Integer.compare(p2.getViewCount(), p1.getViewCount()))
+			.limit(3)
+			.collect(Collectors.toList());
 	}
 }

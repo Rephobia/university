@@ -33,6 +33,9 @@ public class ProductsController {
 		model.addAttribute("currentPage", page);
 		model.addAttribute("totalPages", productsRepository.getTotalPages());
 		model.addAttribute("size", productsRepository.pageSize);
+
+		model.addAttribute("mostViewed", productsRepository.getTop3MostViewedProducts());
+
 		
 		return "products";
 	}
@@ -47,7 +50,11 @@ public class ProductsController {
 	@GetMapping("/show/{id}")
 	public String showOneProduct(Model model, @PathVariable(value = "id") Long id) {
 		Product product = productsRepository.findById(id);
+		
+		product.incrementViewCount();
+		
 		model.addAttribute("product", product);
+
 		return "product-page";
 	}
 

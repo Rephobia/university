@@ -48,9 +48,7 @@
         </tr>
         </tbody>
     </table>
-    <!-- Pagination Buttons -->
     <ul class="pagination">
-      <!-- Page Number Buttons -->
       <li th:each="i : ${#numbers.sequence(1, totalPages)}">
         <a th:href="@{/products(page=${i})}"
            th:classappend="${i == currentPage} ? 'active'"
@@ -60,6 +58,29 @@
     </ul>
     <span th:text="${'Всего товаров ' + products.size()}"/>
     <br>
+    <h2>Самые просматриваемые товары</h2>
+    
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Название товара</th>
+          <th>Цена</th>
+	  <th>Количество просмотров</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr th:each="product : ${mostViewed}">
+          <td th:text="${product.id}"/>
+          <td th:text="${product.title}"/>
+          <td th:text="${product.price}"/>
+	  <td th:text="${product.viewCount}"/>
+
+        </tr>
+      </tbody>
+    </table>
+
     <form th:action="@{/products/add}"
           th:object="${product}" method="post" class="form-horizontal">
 

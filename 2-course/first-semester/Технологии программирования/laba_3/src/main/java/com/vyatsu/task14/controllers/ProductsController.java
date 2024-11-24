@@ -23,12 +23,16 @@ public class ProductsController {
 	public String showProductsList(@RequestParam(value = "title", required = false) String title,
 				       @RequestParam(value = "gt", required = false) Integer gt,
 				       @RequestParam(value = "lt", required = false) Integer lt,
+				       @RequestParam(defaultValue = "1", required = false) int page,
 				       Model model) {
-		List<Product> products = productsRepository.filterProducts(title, gt, lt);
+		List<Product> products = productsRepository.filterProducts(page, title, gt, lt);
 
 		model.addAttribute("products", products);
 		model.addAttribute("product", new Product());
-
+		model.addAttribute("currentPage", page);
+		model.addAttribute("totalPages", productsRepository.getTotalPages());
+		model.addAttribute("size", productsRepository.pageSize);
+		
 		return "products";
 	}
 

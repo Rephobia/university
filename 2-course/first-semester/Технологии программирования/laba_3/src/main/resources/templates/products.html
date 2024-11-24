@@ -48,6 +48,16 @@
         </tr>
         </tbody>
     </table>
+    <!-- Pagination Buttons -->
+    <ul class="pagination">
+      <!-- Page Number Buttons -->
+      <li th:each="i : ${#numbers.sequence(1, totalPages)}">
+        <a th:href="@{/products(page=${i})}"
+           th:classappend="${i == currentPage} ? 'active'"
+           th:text="${i}">
+        </a>
+      </li>
+    </ul>
     <span th:text="${'Всего товаров ' + products.size()}"/>
     <br>
     <form th:action="@{/products/add}"
@@ -75,6 +85,27 @@
         </div>
     </form>
 </div>
-
+<style>
+    .pagination {
+        display: flex;
+        list-style: none;
+        padding: 0;
+    }
+    .pagination li {
+        margin: 0 10px;
+    }
+    .pagination li a {
+        text-decoration: none;
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        color: #333;
+    }
+    .pagination li a.active {
+        font-weight: bold;
+        background-color: #007bff;
+        color: white;
+    }
+</style>
 </body>
 </html>

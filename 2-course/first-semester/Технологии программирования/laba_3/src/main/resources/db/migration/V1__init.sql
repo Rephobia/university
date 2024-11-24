@@ -5,6 +5,7 @@ INSERT INTO products (title, price) VALUES ('Bread', 40), ('Milk', 80);
 
 CREATE TABLE users (
     username VARCHAR(50) NOT NULL,
+    fullname VARCHAR(50) NOT NULL,
     password VARCHAR(100) NOT NULL,
     enabled boolean NOT NULL,
     PRIMARY KEY (username)
@@ -12,8 +13,8 @@ CREATE TABLE users (
 
 INSERT INTO users
 VALUES
-('user1', '{noop}123', true),
-('user2', '{noop}123', true);
+('user1', 'Richard Stallman', '{noop}123', true),
+('user2', 'Elon musk', '{noop}123', true);
 
 CREATE TABLE authorities (
     username varchar(50) NOT NULL,

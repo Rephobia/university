@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
+import org.springframework.security.access.prepost.PreAuthorize;
 
 @Controller
 @RequestMapping("/products")
@@ -37,6 +38,7 @@ public class ProductsController {
 	}
 
 	@PostMapping("/add")
+	@PreAuthorize("hasRole('ADMIN')")
 	public String addProduct(@ModelAttribute(value = "product")Product product) {
 		productsRepository.save(product);
 		return "redirect:/products";
@@ -50,6 +52,8 @@ public class ProductsController {
 	}
 
 	@GetMapping("/edit/{id}")
+	@PreAuthorize("hasRole('ADMIN')")
+
 	public String editFormProduct(Model model, @PathVariable(value = "id") Long id) {
 		Product product = productsRepository.findById(id);
 		model.addAttribute("product", product);
@@ -57,6 +61,7 @@ public class ProductsController {
 	}
 
 	@PostMapping("/edit")
+	@PreAuthorize("hasRole('ADMIN')")
 	public String editProduct(@RequestParam(value = "id", required = false) Long id,
 				  @RequestParam(value = "title", required = false) String title,
 				  @RequestParam(value = "price", required = false) Integer price,
@@ -68,6 +73,7 @@ public class ProductsController {
 	}
 	
 	@PostMapping("/delete/{id}")
+	@PreAuthorize("hasRole('ADMIN')")
 	public String deleteProduct(Model model, @PathVariable(value = "id") Long id) {
 		productsRepository.delete(id);
 		return "redirect:/products";

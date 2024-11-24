@@ -2,11 +2,16 @@ package com.vyatsu.task14.repositories;
 
 import com.vyatsu.task14.entities.Product;
 import org.springframework.stereotype.Component;
+import org.springframework.data.jpa.domain.Specification;
+
 
 import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import com.vyatsu.task14.repositories.specifications.ListSpecification;
+import com.vyatsu.task14.repositories.specifications.ProductSpecification;
 
 @Component
 public class ProductRepository {
@@ -28,13 +33,6 @@ public class ProductRepository {
 		return products.stream().filter(p -> p.getTitle().equals(title)).findFirst().get();
 	}
 	
-	public List<Product> findProductsByTitle(String title) {
-		return products.stream()
-			.filter(product -> product.getTitle() != null && 
-				product.getTitle().toLowerCase().contains(title.toLowerCase()))
-			.collect(Collectors.toList());
-	}
-
 	public Product findById(Long id) {
 		return products.stream().filter(p -> p.getId().equals(id)).findFirst().get();
 	}
@@ -44,26 +42,24 @@ public class ProductRepository {
 		if (gt == null && lt == null && (title == null || title.isEmpty())) {
 			return products;
 		}
-		
-		List<Product> result = this.products;
+
+		ListSpecification<Product> spec = ListSpecification.all();
 
 		if (title != null && !title.isEmpty()) {
-			result = this.findProductsByTitle(title);
+			spec = spec.and(ProductSpecification.hasTitle(title));
 		}
 		
 		if (gt != null) {
-			result = result.stream()
-				.filter(product -> product.getPrice() >= gt)
-				.collect(Collectors.toList());
+			spec = spec.and(ProductSpecification.hasPriceGreaterThan(gt));
 		}
 
 		if (lt != null) {
-			result = result.stream()
-				.filter(product ->  product.getPrice() <= lt)
-				.collect(Collectors.toList());
+			spec = spec.and(ProductSpecification.hasPriceLessThan(lt));
 		}
 		
-		return result;
+		return products.stream()
+			.filter(spec::isSatisfiedBy)
+			.collect(Collectors.toList());
 	}
 	
 	public void save(Product product) {

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма ввода данных</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .error {
+            border: 2px solid red;
+        }
+        .error-message {
+            color: red;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Форма ввода данных:</h2>
+    <form id="registrationForm" novalidate>
+        <div class="form-group">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name">
+            <div class="error-message" id="nameError"></div>
+        </div>
+        <div class="form-group">
+            <label for="secondName">Фамилия:</label>
+            <input type="text" id="secondName" name="secondName">
+            <div class="error-message" id="secondNameError"></div>
+        </div>
+        <div class="form-group">
+            <label for="surname">Отчество:</label>
+            <input type="text" id="surname" name="surname">
+            <div class="error-message" id="surnameError"></div>
+        </div>
+        <div class="form-group">
+            <label for="yearOfBirth">Год рождения:</label>
+            <input type="number" id="yearOfBirth" name="yearOfBirth">
+            <div class="error-message" id="yearOfBirthError"></div>
+        </div>
+        <div class="form-group">
+            <label for="address">Адрес:</label>
+            <input type="text" id="address" name="address">
+            <div class="error-message" id="addressError"></div>
+        </div>
+        <div class="form-group">
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g., +1234567890">
+            <div class="error-message" id="phoneError"></div>
+        </div>
+        <div class="form-group">
+            <label for="maritalStatus">Семейный статуы:</label>
+            <select id="maritalStatus" name="maritalStatus">
+                <option value="single">Холостой</option>
+                <option value="married">Женатый</option>
+                <option value="divorced">В разводе</option>
+            </select>
+            <div class="error-message" id="maritalStatusError"></div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <div class="error-message" id="emailError"></div>
+        </div>
+        <button type="button" id="submitButton">Отправить</button>
+    </form>
+
+    <script>
+        document.getElementById('submitButton').addEventListener('click', function () {
+            let isValid = true;
+
+            function validateField(id, errorMessage) {
+                const field = document.getElementById(id);
+                const errorField = document.getElementById(id + 'Error');
+                if (!field.value.trim()) {
+                    field.classList.add('error');
+                    errorField.textContent = errorMessage;
+                    isValid = false;
+                } else {
+                    field.classList.remove('error');
+                    errorField.textContent = '';
+                }
+            }
+
+            validateField('name', 'Имя обязательное поле');
+            validateField('secondName', 'Фамилия обязательное поле');
+            validateField('surname', 'Отчество обязательное поле');
+            validateField('yearOfBirth', 'Год рождения обязательное поле');
+            validateField('address', 'Адрес обязательное поле');
+            validateField('phone', 'Телефон обязательное поле');
+            validateField('maritalStatus', 'Семейный статус обязательное поле');
+            validateField('email', 'Почта обязательное поле');
+
+            const yearOfBirth = document.getElementById('yearOfBirth');
+            const year = parseInt(yearOfBirth.value, 10);
+            if (year && (year < 1900 || year > new Date().getFullYear())) {
+                yearOfBirth.classList.add('error');
+                document.getElementById('yearOfBirthError').textContent = 'Enter a valid year.';
+                isValid = false;
+            }
+
+            const phone = document.getElementById('phone');
+            if (!/^(\+\d{1,3}[- ]?)?\d{10}$/.test(phone.value)) {
+                phone.classList.add('error');
+                document.getElementById('phoneError').textContent = 'Enter a valid phone number.';
+                isValid = false;
+            }
+
+            const email = document.getElementById('email');
+            if (!/^\S+@\S+\.\S+$/.test(email.value)) {
+                email.classList.add('error');
+                document.getElementById('emailError').textContent = 'Enter a valid email address.';
+                isValid = false;
+            }
+
+            if (isValid) {
+                alert('Форма успешно отправлена');
+            }
+        });
+    </script>
+</body>
+</html>

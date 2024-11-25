@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head xmlns="http://www.w3.org/1999/xhtml">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Пример реализации drag&drop на javascript</title> 
+
+<script language="JavaScript">
+var dragObj;
+//Обрабатываем объект-событие для IE
+function getEvent(e, _this) {
+  e = e || window.event;
+
+  if (!e.currentTarget) e.currentTarget = _this;
+
+  if (!e.target) e.target = e.srcElement;
+
+  if (!e.relatedTarget) {
+    if (e.type == 'mouseover') e.relatedTarget = e.fromElement;
+    if (e.type == 'mouseout') e.relatedTarget = e.toElement;
+  }
+//у IE нет pageX и pageY. Создаем и правильно инициализируем их
+  if (e.pageX == null && e.clientX != null ) {
+    var html = document.documentElement;
+    var body = document.body;
+    e.pageX = e.clientX + (html.scrollLeft || body && body.scrollLeft || 0);
+    e.pageX -= html.clientLeft || 0;
+    e.pageY = e.clientY + (html.scrollTop || body && body.scrollTop || 0);
+    e.pageY -= html.clientTop || 0;
+  }
+
+  if (!e.which && e.button) {
+    e.which = e.button & 1 ? 1 : ( e.button & 2 ? 3 : (e.button & 4 ? 2 : 0) );
+  }
+  return e;
+
+}
+
+
+//функция получения координат элемента относительно документа
+function getDocCoords(elem) {
+	//получить кординаты прямоуголника элемента в окне
+    var elemBox = elem.getBoundingClientRect();
+    var body = document.body;
+    var docEl = document.documentElement;
+	//вычисляем (кроссбраузерно) величину прокрутки по вертикали и горизонтали
+    var scrollTop = window.pageYOffset || docEl.scrollTop || body.scrollTop;
+    var scrollLeft = window.pageXOffset || docEl.scrollLeft || body.scrollLeft;
+	
+    var clientTop = docEl.clientTop || body.clientTop || 0;
+    var clientLeft = docEl.clientLeft || body.clientLeft || 0;
+	//вычисляем координаты элемента в документе с учетом прокрутки
+    var top  = elemBox.top +  scrollTop - clientTop;
+    var left = elemBox.left + scrollLeft - clientLeft;
+    return { top: Math.round(top), left: Math.round(left) };
+}
+//после загрузки окна определяем основные обработчики событий, отвечающие за drag&drop
+window.onload=function()
+{
+//двигать будем элемент с id="pict"
+dragObj = document.getElementById("pict");
+//при нажатии кнопки мыши над элементом
+dragObj.onmousedown = function(e) {
+ var obj = this;
+  e = getEvent(e);
+  //получить текущие координаты элемента относительно документа
+  var coords = getDocCoords(this);
+  //dX и dY учитывают смещение точки нажатия относительно левого верхнего угла элемента
+  var dX = e.pageX - coords.left;
+  var dY = e.pageY - coords.top;
+  //абсолютно позиционируем элемент
+  this.style.position = "absolute";
+  document.body.appendChild(this);
+  //установить новые координаты элемента в документе на координаты курсора мыши
+  moveAt(e);
+  this.style.zIndex = 10; //расположим элемент над другими в z-порядке
+  //функция изменения положения элемента на координаты в сообщении у (с учетом смещений dX, dY)
+  function moveAt(e) {
+    obj.style.left = e.pageX - dX + "px";
+    obj.style.top = e.pageY - dY+ "px";
+  }
+  //при перемещении мыши над окном изменяем координаты элемента на координаты курсора
+  document.onmousemove = function(e) {
+
+    e = getEvent(e);
+    moveAt(e);
+  };
+ //когда отпускаем курсор мыши
+  this.onmouseup = function() {
+    document.onmousemove = obj.onmouseup = null;
+  };
+}
+//отменяем стандартную поддержку drag&drop браузерами, т.к. не все поддерживают HTML5
+dragObj.ondragstart = function() {
+  return false;
+};
+}
+</script>
+
+</head>
+<body>
+      <img src="src/clock.png"  style="position:absolute; left:90px; top:100px; cursor:pointer" id="pict" />
+</body>
+</html>

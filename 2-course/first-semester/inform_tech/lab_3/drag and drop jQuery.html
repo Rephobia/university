@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+ 
+<head>
+    <title> Drag & Drop с использованием jQuery UI</title>
+    <style type="text/css" >
+	#destBlock
+	{
+		border:#00C 1px dashed;
+		width:500px;
+		height:200px;
+		overflow:auto;
+	}
+	.imgBlock{
+		
+	}
+	.dropHere{
+		background:#F90;
+	}
+	</style>
+    
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="jquery-ui-1.7.3.custom.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+    $('.imgBlock').draggable({
+        helper:'clone', //оставлять исходный элемент на месте
+  	    opacity : 0.3  //делать перетаскиваемый элемент полупрозрачным
+    });
+    $('#destBlock').droppable({
+        hoverClass: 'dropHere',
+		drop: function(event, ui) {
+            $(this).append(ui.draggable);
+        }
+    });
+});
+    </script>
+</head>
+<body>
+    <h1>Демонстрация возможностей jQuery UI Drag & Drop</h1>
+ 
+    <div class="wrapper">
+        <div id="srcBlock">
+            <img class="imgBlock" src="src/book.png"/>
+            <img class="imgBlock" src="src/clock.png"/>
+            <img class="imgBlock" src="src/key.png"/>
+        </div>
+        <div id="destBlock"></div>
+    </div>
+ 
+</body>
+</html

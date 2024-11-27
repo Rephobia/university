@@ -1,4 +1,4 @@
-package com.vyatsu;
+package com.vyatsu.task14;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

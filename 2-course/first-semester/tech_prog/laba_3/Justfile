@@ -1,5 +1,11 @@
 build:
     mvn clean install
 
-run:
-   mvn spring-boot:run
+run: build
+    mvn spring-boot:run
+
+migrate:
+    mvn flyway:migrate
+
+migrate-clean:
+    mvn flyway:clean flyway:migrate

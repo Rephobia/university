@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deck Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Создать колоду</h2>
+    <form th:action="@{/deck/create}" th:object="${deck}" th:method="post">
+      <label for="name">Название:</label>
+      <input type="text" th:field="*{name}" id="name" name="name" required>
+      <div th:if="${#fields.hasErrors('name')}" th:errors="*{name}" style="color: red;"></div>
+
+      <label for="first_period">Первый период (minutes)</label>
+      <input min="1" type="number" id="first_period" th:field="*{firstPeriod}" name="first_period" required>
+      <div th:if="${#fields.hasErrors('firstPeriod')}" th:errors="*{firstPeriod}" style="color: red;"></div>
+
+      <label for="second_period">Второй период (дни)</label>
+      <input min="1" type="number" id="second_period" th:field="*{secondPeriod}" name="second_period" required>
+      <div th:if="${#fields.hasErrors('secondPeriod')}" th:errors="*{secondPeriod}" style="color: red;"></div>
+
+
+      <label for="third_period">Третий период (дни)</label>
+      <input min="1" type="number" id="third_period" th:field="*{thirdPeriod}" name="third_period" required>
+      <div th:if="${#fields.hasErrors('thirdPeriod')}" th:errors="*{thirdPeriod}" style="color: red;"></div>
+
+      <input type="submit" value="Создать">
+    </form>
+  </div>
+</body>
+</html>

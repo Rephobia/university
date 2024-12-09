@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Deck</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Редактировать колоду</h1>
+
+        <div th:if="${errorMessage}" class="alert alert-danger" th:text="${errorMessage}"></div>
+
+        <form th:action="@{/deck/edit}" th:object="${deck}" method="post">
+            <input type="hidden" th:field="*{id}">
+
+            <div class="mb-3">
+                <label for="name" class="form-label">Имя</label>
+                <input type="text" id="name" class="form-control" th:field="*{name}" placeholder="Enter deck name" required>
+            </div>
+            <div class="mb-3">
+                <label for="firstPeriod" class="form-label">Первый период</label>
+                <input type="number" id="firstPeriod" class="form-control" th:field="*{firstPeriod}" min="0" placeholder="Enter first period in minutes" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="secondPeriod" class="form-label">Второй период</label>
+                <input type="number" id="secondPeriod" class="form-control" th:field="*{secondPeriod}" min="0" placeholder="Enter second period in days" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="thirdPeriod" class="form-label">Третий период</label>
+                <input type="number" id="thirdPeriod" class="form-control" th:field="*{thirdPeriod}" min="0" placeholder="Enter third period in days" required>
+            </div>
+
+            <div class="d-flex justify-content-between">
+                <button type="submit" class="btn btn-success">Сохранить</button>
+                <a th:href="@{/decks}" class="btn btn-secondary">Отмена</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

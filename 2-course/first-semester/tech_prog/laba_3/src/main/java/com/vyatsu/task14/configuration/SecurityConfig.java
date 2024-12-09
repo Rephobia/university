@@ -44,12 +44,12 @@ public class SecurityConfig  extends WebSecurityConfigurerAdapter {
                .formLogin()
                .loginPage("/login")
                .loginProcessingUrl("/authenticateTheUser")
-	       .defaultSuccessUrl("/products", true)
+	       .defaultSuccessUrl("/decks", true)
                .permitAll()
 	       .and()
 	       .logout()
 	       .logoutUrl("/logout")
-	       .logoutSuccessUrl("/products")
+	       .logoutSuccessUrl("/decks")
 	       .permitAll();
    }
 }

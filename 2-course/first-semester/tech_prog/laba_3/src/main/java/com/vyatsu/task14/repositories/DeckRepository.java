@@ -9,5 +9,5 @@ import com.vyatsu.task14.models.Deck;
 
 @Repository
 public interface DeckRepository extends JpaRepository<Deck, Long> {
-        Page<Deck> findByNameContainingIgnoreCase(String name, Pageable pageable);
+    Page<Deck> findByNameContainingIgnoreCase(String name, Pageable pageable);
 }

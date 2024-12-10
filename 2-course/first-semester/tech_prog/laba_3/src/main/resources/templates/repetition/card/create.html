@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deck Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Создать колоду</h2>
+    <form th:action="@{/deck/{id}/card/create(id=${deck.id})}" th:object="${card}" th:method="post">
+      <label for="front">Передняя сторона:</label>
+      <input type="text" th:field="*{front}" id="front" name="front" required>
+      <div th:if="${#fields.hasErrors('front')}" th:errors="*{front}" style="color: red;"></div>
+
+      <label for="back">Задняя сторона:</label>
+      <input type="text" th:field="*{back}" id="back" name="back" required>
+      <div th:if="${#fields.hasErrors('back')}" th:errors="*{back}" style="color: red;"></div>
+      <input type="submit" value="Создать">
+    </form>
+  </div>
+</body>
+</html>

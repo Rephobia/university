@@ -10,6 +10,8 @@ import org.springframework.data.domain.Pageable;
 
 import com.vyatsu.task14.repositories.DeckRepository;
 import com.vyatsu.task14.models.Deck;
+import java.util.Optional;
+
 import com.vyatsu.task14.models.User;
 
 @Service
@@ -17,6 +19,7 @@ public class DeckService {
 
     @Autowired
     private DeckRepository deckRepository;
+
     @Autowired
     private final CurrentUserService currentUserService;
 
@@ -24,6 +27,7 @@ public class DeckService {
 	this.deckRepository = deckRepository;
 	this.currentUserService = currentUserService;
     }
+    
     public Deck getDeckById(Long id) {
         return deckRepository.findById(id)
 	    .orElseThrow(() -> new IllegalArgumentException("Колода не найдена" + id));

@@ -1,0 +1,10 @@
+-- SET search_path TO boot;
+
+CREATE TABLE card (
+    id SERIAL PRIMARY KEY,
+    front VARCHAR(255) NOT NULL,
+    back VARCHAR(255) NOT NULL,
+    deck_id INT NOT NULL, 
+    show_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT fk_deck FOREIGN KEY (deck_id) REFERENCES deck(id) ON DELETE CASCADE
+);

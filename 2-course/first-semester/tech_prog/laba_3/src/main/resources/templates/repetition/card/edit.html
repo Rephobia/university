@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Deck</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Редактировать колоду</h1>
+
+        <div th:if="${errorMessage}" class="alert alert-danger" th:text="${errorMessage}"></div>
+
+	<form th:action="@{/deck/{deckId}/card/edit/{id}(deckId=${deck.id}, id=${card.id})}" th:object="${card}" method="post">
+            <input type="hidden" th:field="*{id}">
+
+            <div class="mb-3">
+                <label for="front" class="form-label">Лицевая сторона</label>
+                <input type="text" id="front" class="form-control" th:field="*{front}" placeholder="Введите лицевую строну" required>
+            </div>
+	    <div class="mb-3">
+              <label for="back" class="form-label">Обратная сторона</label>
+              <input type="text" id="back" class="form-control" th:field="*{back}" placeholder="Введите обратную сторону" required>
+            </div>
+            <div class="d-flex justify-content-between">
+                <button type="submit" class="btn btn-success">Сохранить</button>
+                <a th:href="@{/decks}" class="btn btn-secondary">Отмена</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

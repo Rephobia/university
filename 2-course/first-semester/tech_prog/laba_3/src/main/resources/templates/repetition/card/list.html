@@ -74,14 +74,14 @@
       </table>
       
       <div class="pagination" th:if="${totalPages > 0}">
-        <a th:href="@{/decks(page=${currentPage - 1}, name=${name})}" 
+        <a th:href="@{/deck/{deckId}/card/list(page=${currentPage - 1}, name=${name}, deckId=${deck.id})}" 
            th:if="${currentPage > 0}">Назад</a>
         <span th:each="i : ${#numbers.sequence(0, totalPages - 1)}">
-          <a th:href="@{/decks(page=${i}, name=${name})}" 
+          <a th:href="@{/deck/{deckId}/card/list(page=${i}, name=${name}, deckId=${deck.id})}" 
              th:text="${i + 1}" 
              th:classappend="${i == currentPage} ? 'active' : ''"></a>
         </span>
-        <a th:href="@{/decks(page=${currentPage + 1}, name=${name})}" 
+        <a th:href="@{/deck/{deckId}/card/list(page=${currentPage + 1}, name=${name}, deckId=${deck.id})}" 
            th:if="${currentPage + 1 < totalPages}">Вперед</a>
       </div>
     </div>

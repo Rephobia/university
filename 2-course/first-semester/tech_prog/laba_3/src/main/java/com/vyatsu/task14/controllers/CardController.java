@@ -32,7 +32,7 @@ public class CardController {
     @GetMapping("/list")
     public String getCardsByDeckId(@PathVariable Long deckId,
 				   @RequestParam(defaultValue = "0") int page,
-				   @RequestParam(defaultValue = "10") int size,
+				   @RequestParam(defaultValue = "3") int size,
 				   Model model
 				   ) {
         Page<Card> cardPage = cardService.getCardsByDeckId(deckId, page, size);

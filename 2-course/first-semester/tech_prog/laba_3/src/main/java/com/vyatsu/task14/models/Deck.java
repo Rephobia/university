@@ -24,8 +24,6 @@ public class Deck {
 
     private String username;
     
-    @NotNull(message = "Первый период обязательное поле")
-    private Long firstPeriod;
     @NotNull(message = "Второй период обязательное поле")
     private Long secondPeriod;
     @NotNull(message = "Третий период обязательное поле")
@@ -57,36 +55,28 @@ public class Deck {
         this.username = username;
     }
 
-    public Long getFirstPeriod() {
-	if (firstPeriod == null) {
-	    return null;
-	}
-        return firstPeriod / MINUTES_TO_MILLISECONDS;
-    }
-
-    public void setFirstPeriod(Long firstPeriod) {
-        this.firstPeriod = firstPeriod *  MINUTES_TO_MILLISECONDS;
-    }
-
     public Long getSecondPeriod() {
-	if (secondPeriod == null) {
-	    return null;
-	}
-        return secondPeriod / DAYS_TO_MILLISECONDS;
+        return secondPeriod;
     }
 
+    public Long getSecondPeriodInMs() {
+        return secondPeriod * DAYS_TO_MILLISECONDS;
+    }
+    
     public void setSecondPeriod(Long secondPeriod) {
-        this.secondPeriod = secondPeriod * DAYS_TO_MILLISECONDS;
+        this.secondPeriod = secondPeriod;
     }
 
     public Long getThirdPeriod() {
-	if (thirdPeriod == null) {
-	    return null;
-	}
-        return thirdPeriod / DAYS_TO_MILLISECONDS;
+        return thirdPeriod;
+    }
+
+    public Long getThirdPeriodInMs()
+    {
+	return thirdPeriod * DAYS_TO_MILLISECONDS;
     }
 
     public void setThirdPeriod(Long thirdPeriod) {
-        this.thirdPeriod = thirdPeriod * DAYS_TO_MILLISECONDS;
+        this.thirdPeriod = thirdPeriod;
     }
 }

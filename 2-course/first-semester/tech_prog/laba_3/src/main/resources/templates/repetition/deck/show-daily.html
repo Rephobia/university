@@ -58,7 +58,17 @@
     <div class="text-block">
         <div class="text-field" th:text="${card.front}"></div>
         <div class="text-field" th:text="${card.back}"></div>
-	<a th:href="@{/deck/show-daily/{id}/{cardId}(id=${deck.id}, cardId=${card.id})}" class="btn btn-prrimary">показать</button>
+        <div class="button-row">
+          <form th:action="@{/deck/{id}/set-first-period/{cardId}(id=${deck.id},cardId=${card.id})}" method="post">
+            <button type="submit">Не помню</button>
+          </form>
+          <form th:action="@{/deck/{id}/set-second-period/{cardId}(id=${deck.id},cardId=${card.id})}" method="post">
+            <button type="submit">В самый раз</button>
+          </form>
+          <form th:action="@{/deck/{id}/set-third-period/{cardId}(id=${deck.id},cardId=${card.id})}" method="post">
+            <button type="submit">Помню хорошо</button>
+          </form>
+        </div>
     </div>
 </body>
 </html>

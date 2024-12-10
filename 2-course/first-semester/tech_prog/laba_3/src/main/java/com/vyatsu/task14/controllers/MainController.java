@@ -3,6 +3,12 @@ package com.vyatsu.task14.controllers;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import java.util.List;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
 
 @Controller
 //@RequestMapping("/main")
@@ -17,6 +23,9 @@ public class MainController {
 //        return "index";
 //    }
 //
+    @Autowired
+    private JdbcTemplate jdbcTemplate;
+    
     @GetMapping("/form")
     public String showForm() {
         return "simple-form";
@@ -30,7 +39,22 @@ public class MainController {
     }
 
     @GetMapping("/index")
-    public String doSomething() {
+    public String doSomething(Model model) {
+	Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+		
+	String fullname = null; 
+	System.out.println("test");
+	if (authentication != null && authentication.isAuthenticated()) {
+	    String username = authentication.getName();
+			
+	    List<String> results = jdbcTemplate.query("SELECT fullname FROM users WHERE username = ?", new Object[]{username}, (rs, rowNum) -> rs.getString("fullname"));
+
+	    if (!results.isEmpty()) {
+		fullname = results.get(0);
+	    }
+	}
+		
+	model.addAttribute("fullname", fullname);
         return "index";
     }
    @GetMapping("/login")

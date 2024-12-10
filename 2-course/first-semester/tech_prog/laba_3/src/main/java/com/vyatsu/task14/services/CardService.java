@@ -10,7 +10,7 @@ import com.vyatsu.task14.repositories.DeckRepository;
 import com.vyatsu.task14.models.Card;
 import com.vyatsu.task14.models.Deck;
 import java.util.Optional;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 import java.util.List;
 
@@ -55,7 +55,21 @@ public class CardService {
         cardRepository.deleteById(id);
     }
 
-        public Optional<Card> getNextCardByDeckId(Long deckId) {
-	    return cardRepository.findCardWithDateBeforeNow(LocalDate.now(), deckId);
+    public Optional<Card> getNextCardByDeckId(Long deckId) {
+	List<Card> cards = cardRepository.findCardWithDateBeforeNow(LocalDateTime.now(), deckId);
+	return cards.isEmpty() ? Optional.empty() : Optional.of(cards.get(0));
+    }
+
+    public void addPeriod(Long cardId, Long period) {
+        Card card = cardRepository.findById(cardId)
+	    .orElseThrow(() -> new RuntimeException("Карта не найдена"));
+
+	if (period == null) {
+	    new RuntimeException("Период не задан");
+	}
+	
+        card.setShowTime(LocalDateTime.now().plusNanos(period * 1_000_000));
+	
+        cardRepository.save(card);
     }
 }

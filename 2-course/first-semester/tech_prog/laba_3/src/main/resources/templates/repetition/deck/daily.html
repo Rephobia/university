@@ -55,10 +55,17 @@
     </style>
 </head>
 <body>
+  <div th:if="${card != null}">
+    <a th:href="@{/decks}" class="btn btn-primary">назад</a>
     <div class="text-block">
-        <div class="text-field" th:text="${card.front}"></div>
-        <div class="text-field" th:text="${card.back}"></div>
-	<a th:href="@{/deck/show-daily/{id}/{cardId}(id=${deck.id}, cardId=${card.id})}" class="btn btn-prrimary">показать</button>
+      <div class="text-field" th:text="${card.front}"></div>
+      <a th:href="@{/deck/show-daily/{id}/{cardId}(id=${deck.id}, cardId=${card.id})}" class="btn btn-prrimary">показать</a>
     </div>
+  </div>
+
+  <div th:if="${card == null}">
+    <a th:href="@{/decks}" class="btn btn-primary">назад</a>
+    Карт нет
+  </div>
 </body>
 </html>

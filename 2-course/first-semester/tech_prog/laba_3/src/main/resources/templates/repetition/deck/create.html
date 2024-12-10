@@ -57,10 +57,6 @@
       <input type="text" th:field="*{name}" id="name" name="name" required>
       <div th:if="${#fields.hasErrors('name')}" th:errors="*{name}" style="color: red;"></div>
 
-      <label for="first_period">Первый период (minutes)</label>
-      <input min="1" type="number" id="first_period" th:field="*{firstPeriod}" name="first_period" required>
-      <div th:if="${#fields.hasErrors('firstPeriod')}" th:errors="*{firstPeriod}" style="color: red;"></div>
-
       <label for="second_period">Второй период (дни)</label>
       <input min="1" type="number" id="second_period" th:field="*{secondPeriod}" name="second_period" required>
       <div th:if="${#fields.hasErrors('secondPeriod')}" th:errors="*{secondPeriod}" style="color: red;"></div>

@@ -43,10 +43,11 @@
     </style>
   </head>
   <body>
+    <a th:href="@{/}" class="btn btn-primary">назад</a>
     <div class="container">
       <h1>Колоды:</h1>
       <a th:href="@{/deck/create}" class="btn btn-primary">добавить</a>
-      
+
       <form method="get" th:action="@{/decks}">
         <input type="text" name="name" placeholder="Поиск по имени" th:value="${param.name}" />
         <button type="submit">Поиск</button>

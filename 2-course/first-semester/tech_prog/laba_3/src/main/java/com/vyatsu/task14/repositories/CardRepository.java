@@ -7,14 +7,14 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import java.util.Optional;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import com.vyatsu.task14.models.Card;
+import java.util.List;
 
 @Repository
 public interface CardRepository extends JpaRepository<Card, Long> {
     Page<Card> findByDeckId(Long deckId, Pageable pageable);
 
-    // Custom query to find a card with a date less than now (using Java LocalDate)
     @Query("SELECT c FROM Card c WHERE c.showTime < :currentDate AND c.deck.id = :deckId")
-    Optional<Card> findCardWithDateBeforeNow(@Param("currentDate") LocalDate currentDate, @Param("deckId") Long deckId);
+    List<Card> findCardWithDateBeforeNow(@Param("currentDate") LocalDateTime currentDate, @Param("deckId") Long deckId);
 }

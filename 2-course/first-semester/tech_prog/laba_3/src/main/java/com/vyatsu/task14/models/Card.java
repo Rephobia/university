@@ -1,6 +1,6 @@
 package com.vyatsu.task14.models;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -29,11 +29,11 @@ public class Card {
     private String back;
 
     @Column(name = "show_time", nullable = false)
-    private LocalDate showTime;
+    private LocalDateTime showTime;
 
     @PrePersist
     protected void onCreate() {
-        this.showTime = LocalDate.now();
+        this.showTime = LocalDateTime.now();
     }
 
     public Long getId() {
@@ -68,11 +68,11 @@ public class Card {
         this.back = back;
     }
 
-    public LocalDate getShowTime() {
+    public LocalDateTime getShowTime() {
         return showTime;
     }
 
-    public void setShowTime(LocalDate showTime) {
+    public void setShowTime(LocalDateTime showTime) {
         this.showTime = showTime;
     }
 }

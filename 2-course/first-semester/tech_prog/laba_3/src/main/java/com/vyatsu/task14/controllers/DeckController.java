@@ -119,9 +119,35 @@ public class DeckController {
     }
 
     @GetMapping("/deck/show-daily/{id}/{cardId}")
-    public String showDaily(@PathVariable Long id, Model model) {
+    public String showDaily(@PathVariable Long id, @PathVariable Long cardId, Model model) {
 	Deck deck = deckService.getDeckById(id);
+	Card card = cardService.getCardById(cardId);
+
 	model.addAttribute("deck", deck);
-	return "repetition/deck/daily";
+	model.addAttribute("card", card);
+
+	return "repetition/deck/show-daily";
+    }
+
+
+    @PostMapping("/deck/{id}/set-first-period/{cardId}")
+    public String setFirstPeriod(@PathVariable Long id, @PathVariable Long cardId) {
+	Deck deck = deckService.getDeckById(id);
+	return "redirect:/deck/daily/" + id;
+
+    }
+
+    @PostMapping("/deck/{id}/set-second-period/{cardId}")
+    public String setSecondPeriod(@PathVariable Long id, @PathVariable Long cardId) {
+	Deck deck = deckService.getDeckById(id);
+        cardService.addPeriod(cardId, deck.getSecondPeriodInMs());
+	return "redirect:/deck/daily/" + id;
+    }
+
+    @PostMapping("/deck/{id}/set-third-period/{cardId}")
+    public String setThirdPeriod(@PathVariable Long id, @PathVariable Long cardId) {
+	Deck deck = deckService.getDeckById(id);
+        cardService.addPeriod(cardId, deck.getThirdPeriodInMs());
+	return "redirect:/deck/daily/" + id;
     }
 }

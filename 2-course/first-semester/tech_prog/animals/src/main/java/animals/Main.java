@@ -52,7 +52,7 @@ public class Main {
 		};
 
 		for (Fish fish: fishs) {
-			fish.length();
+			fish.printMaxLength();
 		}		
 	}
 

@@ -7,5 +7,6 @@ public interface Athlete {
 	public String getName();
 
 	public boolean superJump();
+	public int getSuperJumpCount();
 }
 

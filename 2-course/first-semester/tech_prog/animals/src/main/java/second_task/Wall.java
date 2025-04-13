@@ -10,7 +10,11 @@ public class Wall implements Obstacle {
 
 	public boolean check(Athlete athlete)
 	{
-		if (athlete.jump(this.height) || athlete.superJump()) {
+		if (athlete.jump(this.height) || athlete.getSuperJumpCount() > 0) {
+			if (athlete.superJump()) {
+				System.out.println(athlete.getName() +" успешно перепрыгнул стену и использовал суперпрыжок, количество оставшихся прыжков: " + athlete.getSuperJumpCount());
+
+			}
 			System.out.println(athlete.getName() +" успешно перепрыгнул стену");
 			return true;
 		}

@@ -21,7 +21,10 @@ public class Human implements Athlete {
 	{
 		return this.superJump.use();
 	}
-
+	public int getSuperJumpCount()
+	{
+		return this.superJump.getSuperJumpCount();
+	}
 	public boolean run(int length)
 	{
 		return this.length >= length ? true : false;

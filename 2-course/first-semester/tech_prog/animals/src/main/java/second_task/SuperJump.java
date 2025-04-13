@@ -13,5 +13,10 @@ public class SuperJump {
 
 		return false;
 	}
+
+	public int getSuperJumpCount()
+	{
+		return count;
+	}
 }
 

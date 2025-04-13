@@ -2,14 +2,14 @@ package first_task;
 
 public abstract class Fish extends Animal {
 
-	private final int length;
+	private final int maxLength;
 	
-	public Fish(String name, int age, int length) {
+	public Fish(String name, int age, int maxLength) {
 		super(name, age, 0, 200);
-		this.length = length;
+		this.maxLength = maxLength;
 	}
 
-	public void length() {
-		System.out.println(this.getName() + " имеет максимальный размер: " + this.length);
+	public void printMaxLength() {
+		System.out.println(this.getName() + " имеет максимальный размер: " + this.maxLength);
 	}
 }

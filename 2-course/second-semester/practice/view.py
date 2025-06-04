@@ -97,7 +97,7 @@ class Tinker(View):
             return
         for sel in selected:
             item = self.tree.item(sel)
-            entity_id = item['values'][0]
+            entity_id = item['values'][1]
             Entity.delete(entity_id)
         self.refresh()
 

@@ -11,8 +11,7 @@ def seed_data():
     AudioBook(None, 'Атлант расправил плечи', 'Айн Рэнд', 599.50, 'Ольга Петрова', '35ч 00м').store()
     AudioBook(None, 'Гарри Поттер и философский камень', 'Джоан Роулинг', 279.90, 'Дмитрий Губ', '8ч 45м').store()
 
-
-def main():
+if __name__ == "__main__":
     clear_flag = '--clear' in sys.argv
     if clear_flag:
         Database.clear_db()
@@ -21,7 +20,3 @@ def main():
     Database.create_table()
     seed_data()
     print("База наполнена")
-
-
-if __name__ == "__main__":
-    main()

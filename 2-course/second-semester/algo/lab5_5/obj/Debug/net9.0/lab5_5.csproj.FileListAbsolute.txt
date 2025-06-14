@@ -1,0 +1,15 @@
+D:\university\2-course\second-semester\algo\lab5_5\bin\Debug\net9.0\lab5_5.exe
+D:\university\2-course\second-semester\algo\lab5_5\bin\Debug\net9.0\lab5_5.deps.json
+D:\university\2-course\second-semester\algo\lab5_5\bin\Debug\net9.0\lab5_5.runtimeconfig.json
+D:\university\2-course\second-semester\algo\lab5_5\bin\Debug\net9.0\lab5_5.dll
+D:\university\2-course\second-semester\algo\lab5_5\bin\Debug\net9.0\lab5_5.pdb
+D:\university\2-course\second-semester\algo\lab5_5\obj\Debug\net9.0\lab5_5.GeneratedMSBuildEditorConfig.editorconfig
+D:\university\2-course\second-semester\algo\lab5_5\obj\Debug\net9.0\lab5_5.AssemblyInfoInputs.cache
+D:\university\2-course\second-semester\algo\lab5_5\obj\Debug\net9.0\lab5_5.AssemblyInfo.cs
+D:\university\2-course\second-semester\algo\lab5_5\obj\Debug\net9.0\lab5_5.csproj.CoreCompileInputs.cache
+D:\university\2-course\second-semester\algo\lab5_5\obj\Debug\net9.0\lab5_5.sourcelink.json
+D:\university\2-course\second-semester\algo\lab5_5\obj\Debug\net9.0\lab5_5.dll
+D:\university\2-course\second-semester\algo\lab5_5\obj\Debug\net9.0\refint\lab5_5.dll
+D:\university\2-course\second-semester\algo\lab5_5\obj\Debug\net9.0\lab5_5.pdb
+D:\university\2-course\second-semester\algo\lab5_5\obj\Debug\net9.0\lab5_5.genruntimeconfig.cache
+D:\university\2-course\second-semester\algo\lab5_5\obj\Debug\net9.0\ref\lab5_5.dll

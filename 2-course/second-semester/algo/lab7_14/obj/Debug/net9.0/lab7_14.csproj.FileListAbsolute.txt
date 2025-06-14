@@ -1,0 +1,15 @@
+D:\university\2-course\second-semester\algo\lab7_14\bin\Debug\net9.0\lab7_14.exe
+D:\university\2-course\second-semester\algo\lab7_14\bin\Debug\net9.0\lab7_14.deps.json
+D:\university\2-course\second-semester\algo\lab7_14\bin\Debug\net9.0\lab7_14.runtimeconfig.json
+D:\university\2-course\second-semester\algo\lab7_14\bin\Debug\net9.0\lab7_14.dll
+D:\university\2-course\second-semester\algo\lab7_14\bin\Debug\net9.0\lab7_14.pdb
+D:\university\2-course\second-semester\algo\lab7_14\obj\Debug\net9.0\lab7_14.GeneratedMSBuildEditorConfig.editorconfig
+D:\university\2-course\second-semester\algo\lab7_14\obj\Debug\net9.0\lab7_14.AssemblyInfoInputs.cache
+D:\university\2-course\second-semester\algo\lab7_14\obj\Debug\net9.0\lab7_14.AssemblyInfo.cs
+D:\university\2-course\second-semester\algo\lab7_14\obj\Debug\net9.0\lab7_14.csproj.CoreCompileInputs.cache
+D:\university\2-course\second-semester\algo\lab7_14\obj\Debug\net9.0\lab7_14.sourcelink.json
+D:\university\2-course\second-semester\algo\lab7_14\obj\Debug\net9.0\lab7_14.dll
+D:\university\2-course\second-semester\algo\lab7_14\obj\Debug\net9.0\refint\lab7_14.dll
+D:\university\2-course\second-semester\algo\lab7_14\obj\Debug\net9.0\lab7_14.pdb
+D:\university\2-course\second-semester\algo\lab7_14\obj\Debug\net9.0\lab7_14.genruntimeconfig.cache
+D:\university\2-course\second-semester\algo\lab7_14\obj\Debug\net9.0\ref\lab7_14.dll

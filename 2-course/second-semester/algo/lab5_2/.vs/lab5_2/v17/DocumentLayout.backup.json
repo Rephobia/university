@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\university\\2-course\\second-semester\\algo\\lab5_2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{57C04059-FBFB-4B1B-AA48-20D6F353C834}|lab5_2.csproj|d:\\university\\2-course\\second-semester\\algo\\lab5_2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{57C04059-FBFB-4B1B-AA48-20D6F353C834}|lab5_2.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57C04059-FBFB-4B1B-AA48-20D6F353C834}|lab5_2.csproj|d:\\university\\2-course\\second-semester\\algo\\lab5_2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57C04059-FBFB-4B1B-AA48-20D6F353C834}|lab5_2.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57C04059-FBFB-4B1B-AA48-20D6F353C834}|lab5_2.csproj|d:\\university\\2-course\\second-semester\\algo\\lab5_2\\form1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{57C04059-FBFB-4B1B-AA48-20D6F353C834}|lab5_2.csproj|solutionrelative:form1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57C04059-FBFB-4B1B-AA48-20D6F353C834}|lab5_2.csproj|d:\\university\\2-course\\second-semester\\algo\\lab5_2\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57C04059-FBFB-4B1B-AA48-20D6F353C834}|lab5_2.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.resx",
+              "DocumentMoniker": "D:\\university\\2-course\\second-semester\\algo\\lab5_2\\Form1.resx",
+              "RelativeDocumentMoniker": "Form1.resx",
+              "ToolTip": "D:\\university\\2-course\\second-semester\\algo\\lab5_2\\Form1.resx*",
+              "RelativeToolTip": "Form1.resx*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-06-14T13:37:23.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\university\\2-course\\second-semester\\algo\\lab5_2\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\university\\2-course\\second-semester\\algo\\lab5_2\\Form1.cs*",
+              "RelativeToolTip": "Form1.cs*",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T13:35:53.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "D:\\university\\2-course\\second-semester\\algo\\lab5_2\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "D:\\university\\2-course\\second-semester\\algo\\lab5_2\\Form1.Designer.cs*",
+              "RelativeToolTip": "Form1.Designer.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T13:35:31.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\university\\2-course\\second-semester\\algo\\lab5_2\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\university\\2-course\\second-semester\\algo\\lab5_2\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
+              "RelativeToolTip": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T13:29:37.651Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

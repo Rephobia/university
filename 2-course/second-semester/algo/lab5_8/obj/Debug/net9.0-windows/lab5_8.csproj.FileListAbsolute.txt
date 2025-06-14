@@ -1,0 +1,17 @@
+D:\university\2-course\second-semester\algo\lab5_8\bin\Debug\net9.0-windows\lab5_8.exe
+D:\university\2-course\second-semester\algo\lab5_8\bin\Debug\net9.0-windows\lab5_8.deps.json
+D:\university\2-course\second-semester\algo\lab5_8\bin\Debug\net9.0-windows\lab5_8.runtimeconfig.json
+D:\university\2-course\second-semester\algo\lab5_8\bin\Debug\net9.0-windows\lab5_8.dll
+D:\university\2-course\second-semester\algo\lab5_8\bin\Debug\net9.0-windows\lab5_8.pdb
+D:\university\2-course\second-semester\algo\lab5_8\obj\Debug\net9.0-windows\lab5_8.Form1.resources
+D:\university\2-course\second-semester\algo\lab5_8\obj\Debug\net9.0-windows\lab5_8.csproj.GenerateResource.cache
+D:\university\2-course\second-semester\algo\lab5_8\obj\Debug\net9.0-windows\lab5_8.GeneratedMSBuildEditorConfig.editorconfig
+D:\university\2-course\second-semester\algo\lab5_8\obj\Debug\net9.0-windows\lab5_8.AssemblyInfoInputs.cache
+D:\university\2-course\second-semester\algo\lab5_8\obj\Debug\net9.0-windows\lab5_8.AssemblyInfo.cs
+D:\university\2-course\second-semester\algo\lab5_8\obj\Debug\net9.0-windows\lab5_8.csproj.CoreCompileInputs.cache
+D:\university\2-course\second-semester\algo\lab5_8\obj\Debug\net9.0-windows\lab5_8.sourcelink.json
+D:\university\2-course\second-semester\algo\lab5_8\obj\Debug\net9.0-windows\lab5_8.dll
+D:\university\2-course\second-semester\algo\lab5_8\obj\Debug\net9.0-windows\refint\lab5_8.dll
+D:\university\2-course\second-semester\algo\lab5_8\obj\Debug\net9.0-windows\lab5_8.pdb
+D:\university\2-course\second-semester\algo\lab5_8\obj\Debug\net9.0-windows\lab5_8.genruntimeconfig.cache
+D:\university\2-course\second-semester\algo\lab5_8\obj\Debug\net9.0-windows\ref\lab5_8.dll

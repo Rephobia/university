@@ -236,7 +236,7 @@ namespace WindowsFormsApp1
             stopwatch.Stop();
             long time = stopwatch.ElapsedTicks;
             dataGridView3.Rows[count - 1].Cells[1].Value = time;
-            //chart5.Series[0].Points.AddXY(n, time);
+            chart5.Series[4].Points.AddXY(n, time); // Добавил
             chart5.Series[0].Points.AddXY(n, sr);
             chart5.Series[1].Points.AddXY(n, obm);
 
@@ -250,8 +250,8 @@ namespace WindowsFormsApp1
             time = stopwatch.ElapsedTicks;
             dataGridView3.Rows[count - 1].Cells[2].Value = time;
             dataGridView4.Rows[count - 1].Cells[1].Value = time;
-            // chart5.Series[1].Points.AddXY(n, time);
-            //chart6.Series[1].Points.AddXY(n, time);
+            chart5.Series[5].Points.AddXY(n, time); // Добавил 
+            chart6.Series[5].Points.AddXY(n, time); // Добавил
             chart5.Series[2].Points.AddXY(n, sr);
             chart5.Series[3].Points.AddXY(n, obm);
             chart6.Series[2].Points.AddXY(n, sr);
@@ -265,7 +265,7 @@ namespace WindowsFormsApp1
             stopwatch.Stop();
             time = stopwatch.ElapsedTicks;
             dataGridView4.Rows[count - 1].Cells[2].Value = time;
-            //chart6.Series[0].Points.AddXY(n, time);
+            chart6.Series[4].Points.AddXY(n, time); // Добавил
             chart6.Series[0].Points.AddXY(n, sr);
             chart6.Series[1].Points.AddXY(n, obm);
         }
@@ -331,6 +331,9 @@ namespace WindowsFormsApp1
             chart6.Series[1].Points.Clear();
             chart6.Series[2].Points.Clear();
             chart6.Series[3].Points.Clear();
+            chart5.Series[4].Points.Clear();
+            chart5.Series[5].Points.Clear();
+            chart6.Series[4].Points.Clear();
         }
         private void сохранитьВсёГрафикиToolStripMenuItem_Click(object sender, EventArgs e)
         {

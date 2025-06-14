@@ -9,3 +9,15 @@ D:\university\second-semester\Информационные технологии\
 D:\university\second-semester\Информационные технологии\laba_3\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 D:\university\second-semester\Информационные технологии\laba_3\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 D:\university\second-semester\Информационные технологии\laba_3\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\university\1-course\second-semester\Inform_tech\laba_3\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\university\1-course\second-semester\Inform_tech\laba_3\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\university\1-course\second-semester\Inform_tech\laba_3\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\university\1-course\second-semester\Inform_tech\laba_3\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+D:\university\1-course\second-semester\Inform_tech\laba_3\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.config
+D:\university\1-course\second-semester\Inform_tech\laba_3\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\university\1-course\second-semester\Inform_tech\laba_3\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
+D:\university\1-course\second-semester\Inform_tech\laba_3\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\university\1-course\second-semester\Inform_tech\laba_3\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\university\1-course\second-semester\Inform_tech\laba_3\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\university\1-course\second-semester\Inform_tech\laba_3\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\university\1-course\second-semester\Inform_tech\laba_3\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

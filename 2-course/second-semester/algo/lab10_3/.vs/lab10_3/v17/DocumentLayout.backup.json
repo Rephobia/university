@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\university\\2-course\\second-semester\\algo\\lab10_3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{20BE2DBA-AC2B-4D3B-813E-393BD68228B4}|lab10_3.csproj|d:\\university\\2-course\\second-semester\\algo\\lab10_3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20BE2DBA-AC2B-4D3B-813E-393BD68228B4}|lab10_3.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\university\\2-course\\second-semester\\algo\\lab10_3\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\university\\2-course\\second-semester\\algo\\lab10_3\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAswFgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T07:52:42.363Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

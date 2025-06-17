@@ -1,5 +1,11 @@
 default:
     just exec-products
 
-exec-products:
-    mvn compile && mvn exec:java -Dexec.mainClass=Products.Main
+products:
+    mvn compile --quiet && mvn exec:java -Dexec.mainClass=Products.Main --quiet
+    
+lms:
+    mvn compile --quiet && mvn exec:java -Dexec.mainClass=Lms.Main --quiet
+    
+migrate:
+    mvn flyway:clean -Dflyway.cleanDisabled=false && mvn flyway:migrate 

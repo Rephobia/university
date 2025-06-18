@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Fx.FXMLDocumentController">
+    <children>
+        <Button layoutX="126" layoutY="20" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
+        <Label layoutX="126" layoutY="50" minHeight="16" minWidth="69" fx:id="label" />
+    <!-- Таблица в которую мы будем выводит данные -->
+    <TableView fx:id="tableUsers" layoutX="12.0" layoutY="80.0" prefHeight="324.0" prefWidth="600.0">
+      <columns>
+        <!-- Колонки таблицы -->
+        <TableColumn prefWidth="80.0" text="№" fx:id="idCol" />
+        <TableColumn prefWidth="150.0" text="Название" fx:id="nameCol" />
+        <TableColumn prefWidth="150.0" text="Цена" fx:id="cenaCol" />
+        <TableColumn prefWidth="220.0" text="Категория" fx:id="categoryCol" />
+      </columns>
+    </TableView>
+    </children>
+</AnchorPane>

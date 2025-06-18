@@ -6,6 +6,9 @@ products:
     
 lms:
     mvn compile --quiet && mvn exec:java -Dexec.mainClass=Lms.Main --quiet
-    
+
+fx:
+    mvn compile && mvn exec:java -Dexec.mainClass=Fx.Main
+
 migrate:
     mvn flyway:clean -Dflyway.cleanDisabled=false && mvn flyway:migrate 

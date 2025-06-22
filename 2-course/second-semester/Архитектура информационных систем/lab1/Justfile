@@ -1,14 +1,20 @@
 default:
-    just exec-products
+    just --list
 
-products:
-    mvn compile --quiet && mvn exec:java -Dexec.mainClass=Products.Main --quiet
+lab1:
+    mvn compile --quiet && mvn exec:java -Dexec.mainClass=lab1.Main --quiet
     
-lms:
-    mvn compile --quiet && mvn exec:java -Dexec.mainClass=Lms.Main --quiet
+lab1-personal:
+    mvn compile --quiet && mvn exec:java -Dexec.mainClass=lab1_personal.Main --quiet
 
-fx:
-    mvn compile && mvn exec:java -Dexec.mainClass=Fx.Main
+lab2:
+    mvn compile && mvn exec:java -Dexec.mainClass=lab2.Main
+
+lab2-combo:
+    mvn compile && mvn exec:java -Dexec.mainClass=lab2_combo.Main
+
+lab2-personal:
+    mvn compile && mvn exec:java -Dexec.mainClass=lab2_personal.LessonAddForm
 
 migrate:
     mvn flyway:clean -Dflyway.cleanDisabled=false && mvn flyway:migrate 

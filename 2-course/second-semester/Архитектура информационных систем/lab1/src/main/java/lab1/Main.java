@@ -1,4 +1,4 @@
-package Products;
+package lab1;
 
 import java.sql.SQLException;
 import java.util.List;

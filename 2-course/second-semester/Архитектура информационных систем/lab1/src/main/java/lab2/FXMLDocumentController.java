@@ -1,4 +1,4 @@
-package Fx;
+package lab2;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -44,11 +44,6 @@ public class FXMLDocumentController implements Initializable {
 	private void handleButtonAction(ActionEvent event) {
 		System.out.println("You clicked me");
 		label.setText("Hello");
-	}
-
-	@Override
-	public void initialize(URL url, ResourceBundle rb) {
-		initData();
 
 		idCol.setCellValueFactory(new PropertyValueFactory<Product, Integer>("id"));
 		nameCol.setCellValueFactory(new PropertyValueFactory<Product, String>("good"));
@@ -56,6 +51,11 @@ public class FXMLDocumentController implements Initializable {
 		categoryCol.setCellValueFactory(new PropertyValueFactory<Product, String>("category"));
 
 		tableUsers.setItems(userData);
+	}
+
+	@Override
+	public void initialize(URL url, ResourceBundle rb) {
+		initData();
 	}
 
 

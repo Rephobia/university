@@ -1,4 +1,4 @@
-package Lms;
+package lab1_personal;
 
 public class Teacher {
 	public int id;

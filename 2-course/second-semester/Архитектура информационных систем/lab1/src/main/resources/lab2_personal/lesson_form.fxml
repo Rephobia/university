@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="lab2_personal.LessonFormController" spacing="10" alignment="CENTER">
+    <ComboBox fx:id="teacherCombo" promptText="Выберите преподавателя"/>
+    <ComboBox fx:id="groupCombo" promptText="Выберите группу"/>
+    <ComboBox fx:id="subjectCombo" promptText="Выберите предмет"/>
+    <ComboBox fx:id="lessonTypeCombo" promptText="Выберите тип занятия"/>
+    <TextField fx:id="hoursField" promptText="Введите количество часов"/>
+    <Button text="Добавить" onAction="#onAddLesson"/>
+</VBox>

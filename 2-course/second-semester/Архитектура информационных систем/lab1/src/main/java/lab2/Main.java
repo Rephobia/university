@@ -1,4 +1,4 @@
-package Fx;
+package lab2;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -19,7 +19,7 @@ public class Main extends Application {
 		    stage.setScene(scene);
 		    stage.show();
 	    } catch (IOException e) {
-		    e.printStackTrace(); // можно также показать Alert с ошибкой
+		    e.printStackTrace();
 	    }
     }
 

@@ -1,4 +1,4 @@
-package Products;
+package lab1;
 
 import org.sqlite.JDBC;
 import java.sql.*;

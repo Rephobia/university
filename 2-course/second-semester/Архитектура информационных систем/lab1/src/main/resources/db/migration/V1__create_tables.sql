@@ -67,4 +67,11 @@ INSERT INTO teacher_subjects (teacher_id, subject_id) VALUES (2, 2);
 INSERT INTO teacher_subjects (teacher_id, subject_id) VALUES (3, 3);
 
 INSERT INTO lesson_types (name) VALUES ('Лекция');
-INSERT INTO lesson_types (name) VALUES ('Практика')
+INSERT INTO lesson_types (name) VALUES ('Практика');
+
+INSERT INTO groups (specialty, department, student_count) VALUES
+('ИСТ-21', 'Информационные системы и технологии', 25),
+('ИСТ-22', 'Информационные системы и технологии', 24),
+('ПО-21', 'Программное обеспечение', 28),
+('БИ-21', 'Бизнес-информатика', 22),
+('КБ-21', 'Компьютерная безопасность', 20);

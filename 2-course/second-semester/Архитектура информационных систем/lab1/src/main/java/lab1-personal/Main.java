@@ -1,4 +1,4 @@
-package Lms;
+package lab1_personal;
 
 import java.sql.SQLException;
 import java.util.List;

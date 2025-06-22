@@ -119,7 +119,7 @@ public class DbHandler {
 
     public List<String> getAllTeacherNames() throws SQLException {
 	List<String> list = new ArrayList<>();
-	var rs = connection.createStatement().executeQuery("SELECT id, last_name, first_name FROM teachers");
+	var rs = connection.createStatement().executeQuery("select id, last_name, first_name from teachers");
 	while (rs.next()) {
 	    list.add(rs.getInt("id") + " " + rs.getString("last_name") + " " + rs.getString("first_name"));
 	}
@@ -128,7 +128,7 @@ public class DbHandler {
 
     public List<String> getAllGroupNames() throws SQLException {
 	List<String> list = new ArrayList<>();
-	var rs = connection.createStatement().executeQuery("SELECT id, specialty FROM groups");
+	var rs = connection.createStatement().executeQuery("select id, specialty from groups");
 	while (rs.next()) {
 	    list.add(rs.getInt("id") + " " + rs.getString("specialty"));
 	}
@@ -137,7 +137,7 @@ public class DbHandler {
 
     public List<String> getAllSubjectNames() throws SQLException {
 	List<String> list = new ArrayList<>();
-	var rs = connection.createStatement().executeQuery("SELECT id, name FROM subjects");
+	var rs = connection.createStatement().executeQuery("select id, name from subjects");
 	while (rs.next()) {
 	    list.add(rs.getInt("id") + " " + rs.getString("name"));
 	}
@@ -146,7 +146,7 @@ public class DbHandler {
 
     public List<String> getAllLessonTypes() throws SQLException {
 	List<String> list = new ArrayList<>();
-	var rs = connection.createStatement().executeQuery("SELECT id, name FROM lesson_types");
+	var rs = connection.createStatement().executeQuery("select id, name from lesson_types");
 	while (rs.next()) {
 	    list.add(rs.getInt("id") + " " + rs.getString("name"));
 	}
@@ -192,7 +192,7 @@ public class DbHandler {
 	return lessons;
     }
 
-    public List<LessonView> getLessonsByTeacher() throws SQLException {
+    public List<LessonView> getLessons() throws SQLException {
 	List<LessonView> lessons = new ArrayList<>();
 	var sql = """
 	    SELECT t.id as teacher_id, t.last_name AS teacher_name, t.last_name AS teacher_last_name,  s.name AS subject, g.specialty AS group_name, lt.name AS type, l.hours

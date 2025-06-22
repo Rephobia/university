@@ -159,10 +159,11 @@ public class LessonAddForm extends Application {
     
     private void refreshTable() {
 	try {
-	    List<LessonView> lessons = DbHandler.getInstance().getLessonsByTeacher();
+	    messageLabel.setText("");
+	    searchTeacherCombo.getSelectionModel().clearSelection();
+	    List<LessonView> lessons = DbHandler.getInstance().getLessons();
 	    ObservableList<LessonView> observableLessons = FXCollections.observableArrayList(lessons);
 	    tableView.setItems(observableLessons);
-	    searchTeacherCombo.getSelectionModel().clearSelection();
 	} catch (Exception ex) {
 	    messageLabel.setText("Ошибка поиска: " + ex.getMessage());
 	}	

@@ -136,6 +136,9 @@ public class LessonAddForm extends Application {
     }
 
     private void makeLessonTable(GridPane grid) {
+	TableColumn<LessonView, String> idCol = new TableColumn<>("id");
+        idCol.setCellValueFactory(cell -> cell.getValue().idProperty());
+	
 	TableColumn<LessonView, String> teacherCol = new TableColumn<>("Преподаватель");
         teacherCol.setCellValueFactory(cell -> cell.getValue().teacherProperty());
 	
@@ -151,7 +154,7 @@ public class LessonAddForm extends Application {
         TableColumn<LessonView, Integer> hoursCol = new TableColumn<>("Часы");
         hoursCol.setCellValueFactory(cell -> cell.getValue().hoursProperty().asObject());
 
-        tableView.getColumns().addAll(teacherCol, subjectCol, groupCol, typeCol, hoursCol);
+        tableView.getColumns().addAll(idCol, teacherCol, subjectCol, groupCol, typeCol, hoursCol);
         tableView.setPrefHeight(300);
 
         grid.add(tableView, 0, 8, 4, 1);

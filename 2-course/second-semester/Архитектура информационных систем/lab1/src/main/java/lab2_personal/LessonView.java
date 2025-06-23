@@ -3,18 +3,24 @@ package lab2_personal;
 import javafx.beans.property.*;
 
 public class LessonView {
+    private final StringProperty id;
     private final StringProperty teacher;
     private final StringProperty subject;
     private final StringProperty group;
     private final StringProperty type;
     private final IntegerProperty hours;
 
-    public LessonView(String teacher, String subject, String group, String type, int hours) {
+    public LessonView(String id, String teacher, String subject, String group, String type, int hours) {
+	this.id = new SimpleStringProperty(id);
 	this.teacher = new SimpleStringProperty(teacher);
         this.subject = new SimpleStringProperty(subject);
         this.group = new SimpleStringProperty(group);
         this.type = new SimpleStringProperty(type);
         this.hours = new SimpleIntegerProperty(hours);
+    }
+
+    public StringProperty idProperty() {
+	return id;
     }
     
     public StringProperty teacherProperty() {

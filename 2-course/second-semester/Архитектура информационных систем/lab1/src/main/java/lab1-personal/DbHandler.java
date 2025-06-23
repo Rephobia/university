@@ -168,7 +168,7 @@ public class DbHandler {
     public List<LessonView> getLessonsByTeacher(int teacherId) throws SQLException {
 	List<LessonView> lessons = new ArrayList<>();
 	var sql = """
-	    SELECT t.id as teacher_id, t.last_name AS teacher_name, t.last_name AS teacher_last_name,  s.name AS subject, g.specialty AS group_name, lt.name AS type, l.hours
+	    SELECT l.id, t.id as teacher_id, t.last_name AS teacher_name, t.last_name AS teacher_last_name,  s.name AS subject, g.specialty AS group_name, lt.name AS type, l.hours
 	    FROM lesson l
 	    JOIN teachers t ON l.teacher_id = t.id
 	    JOIN subjects s ON l.subject_id = s.id
@@ -182,6 +182,7 @@ public class DbHandler {
 	var rs = ps.executeQuery();
 	while (rs.next()) {
 	    lessons.add(new LessonView(
+				       rs.getString("id"),
 				       rs.getInt("teacher_id") + " " + rs.getString("teacher_name") + " " + rs.getString("teacher_last_name"),
 				       rs.getString("subject"),
 				       rs.getString("group_name"),
@@ -195,7 +196,7 @@ public class DbHandler {
     public List<LessonView> getLessons() throws SQLException {
 	List<LessonView> lessons = new ArrayList<>();
 	var sql = """
-	    SELECT t.id as teacher_id, t.last_name AS teacher_name, t.last_name AS teacher_last_name,  s.name AS subject, g.specialty AS group_name, lt.name AS type, l.hours
+	    SELECT l.id, t.id as teacher_id, t.last_name AS teacher_name, t.last_name AS teacher_last_name,  s.name AS subject, g.specialty AS group_name, lt.name AS type, l.hours
 	    FROM lesson l
 	    JOIN teachers t ON l.teacher_id = t.id
 	    JOIN subjects s ON l.subject_id = s.id
@@ -207,6 +208,7 @@ public class DbHandler {
 	var rs = ps.executeQuery();
 	while (rs.next()) {
 	    lessons.add(new LessonView(
+				       rs.getString("id"),
 				       rs.getInt("teacher_id") + " " + rs.getString("teacher_name") + " " + rs.getString("teacher_last_name"),
 				       rs.getString("subject"),
 				       rs.getString("group_name"),

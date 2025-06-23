@@ -7,7 +7,6 @@ public class Main {
 	public static void main(String[] args) {
 		try {
 			DbHandler db = DbHandler.getInstance();
-			// db.addProduct(new Product("Музей", 200, "Развлечения"));
 
 			System.out.println("\nЗадание 1. выбор всех записей из определенной таблицы БД (выбираем всех учителей)");
 			printTeachers(db.getAllTeachers());
@@ -16,7 +15,7 @@ public class Main {
 
 			printTeachers(db.getTeachersWitnExperience(6));
 			
-			System.out.println("\nЗадание 3.Выбор записей, удовлетворяющих условию принадлежности значений указанному диапазону(выбираем всех учителей с опытом более 6 лет, но менее 8)");
+			System.out.println("\nЗадание 3.Выбор записей, удовлетворяющих условию принадлежности значений указанному диапазону(выбираем всех учителей с опытом более 6 лет, но меньше 8)");
 			
 			printTeachers(db.getTeachersBetweenExperience(6, 8));
 

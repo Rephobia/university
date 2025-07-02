@@ -21,7 +21,7 @@ namespace lab3
         private void LoadComboBoxes()
         {
             comboBox1.DataSource = dbHelper.GetTeachers();
-            comboBox1.DisplayMember = "FullName"; // можно и другое, например last_name + first_name
+            comboBox1.DisplayMember = "FullName";
             comboBox1.ValueMember = "id";
 
             comboBox2.DataSource = dbHelper.GetTable("groups");

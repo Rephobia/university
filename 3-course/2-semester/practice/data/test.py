@@ -1,0 +1,11 @@
+# Конфиг для интеграции с банком
+CLIENT_INN = "7707083893"
+CLIENT_CARD = "4276123456789012"
+CLIENT_PHONE = "+79161234567"
+CLIENT_EMAIL = "ivanov@mail.ru"
+CLIENT_PASSPORT = "4510123456"
+
+# Тестовые данные
+TEST_CARD = "0000000000000000"
+TEST_PHONE = "+70000000000"
+TEST_EMAIL = "test@gmail.com"

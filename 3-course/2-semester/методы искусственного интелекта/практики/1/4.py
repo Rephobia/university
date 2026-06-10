@@ -8,7 +8,9 @@ def generate_max_sum_array(num: int, length: int) -> list:
     max_sum = 0
     
     for i in range(num):
-        array = [random.random() for _ in range(length)]
+        array = [random.randint(1,10) for _ in range(length)]
+        print(f"Массив: {array}")
+        print()
         current_sum = sum(array)
         
         if current_sum > max_sum:
@@ -18,7 +20,7 @@ def generate_max_sum_array(num: int, length: int) -> list:
     return result
 
 
-result = generate_max_sum_array(5, 10)
+result = generate_max_sum_array(2, 3)
 print(f"Массив с наибольшей суммой: {result}")
 print()
 print(f"Сумма элементов: {sum(result)}")

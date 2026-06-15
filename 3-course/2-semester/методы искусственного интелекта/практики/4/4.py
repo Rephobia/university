@@ -120,7 +120,7 @@ def draw_comparison(critics, person1, person2, title):
     plt.title(title)
     plt.grid(True)
 
-    plt.show()
+    # plt.show()
     
 most_similar = matches[0][1]
 least_similar = matches[-1][1]
@@ -141,3 +141,5 @@ draw_comparison(
     least_similar,
     f'Пёс Шарик и {least_similar}'
 )
+
+plt.show()
